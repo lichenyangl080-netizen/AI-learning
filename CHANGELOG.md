@@ -1,5 +1,17 @@
 # Curriculum Changelog
 
+## v1.0.1 — Ability target calibration
+
+- 为 Ability Matrix 增加 `Priority`
+- 区分目标深度与职业重心
+- 将 TypeScript 调整为 `L3-L4`
+- 将 Reliability 调整为 `L3-L4`
+- 将 Python 调整为 `L2-L3`
+- 将 Deployment 调整为 `L2`
+- 明确 AI Infrastructure 为 `L1 / AWARENESS`
+- 保持 Product / AI UX / Workflow / Context / Tool Design / Skill / Harness / Eval 等为核心深区
+- 未开始 Phase 0 测评
+
 ## v1.0
 
 Initial AI Product Engineer curriculum and learning-state architecture.
