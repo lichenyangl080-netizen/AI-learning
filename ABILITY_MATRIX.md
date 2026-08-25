@@ -1,44 +1,58 @@
-# Ability Matrix
+# Ability Evidence Matrix
 
-| Ability | Current Level | Target Level | Priority | Evidence | Last Verified |
-| --- | --- | --- | --- | --- | --- |
-| Product Judgment | UNASSESSED | L4 | CORE | Awaiting Phase 0 assessment | — |
-| AI UX | UNASSESSED | L4 | CORE | Awaiting Phase 0 assessment | — |
-| JavaScript | UNASSESSED | L3 | CORE-SUPPORT | Awaiting Phase 0 assessment | — |
-| TypeScript | UNASSESSED | L3-L4 | CORE-SUPPORT | Awaiting Phase 0 assessment | — |
-| React | UNASSESSED | L4 | CORE | Awaiting Phase 0 assessment | — |
-| Next.js | UNASSESSED | L4 | CORE | Awaiting Phase 0 assessment | — |
-| HTTP / API | UNASSESSED | L3 | SUPPORT | Awaiting Phase 0 assessment | — |
-| Async | UNASSESSED | L3 | SUPPORT | Awaiting Phase 0 assessment | — |
-| Git | UNASSESSED | L3 | SUPPORT | Awaiting Phase 0 assessment | — |
-| Backend | UNASSESSED | L3 | SUPPORT | Awaiting Phase 0 assessment | — |
-| Database | UNASSESSED | L3 | SUPPORT | Awaiting Phase 0 assessment | — |
-| Auth | UNASSESSED | L3 | SUPPORT | Awaiting Phase 0 assessment | — |
-| LLM fundamentals | UNASSESSED | L3 | SUPPORT | Awaiting Phase 0 assessment | — |
-| Structured Output | UNASSESSED | L3 | CORE-SUPPORT | Awaiting Phase 0 assessment | — |
-| Context Engineering | UNASSESSED | L4 | CORE | Awaiting Phase 0 assessment | — |
-| Tool Calling | UNASSESSED | L3 | CORE-SUPPORT | Awaiting Phase 0 assessment | — |
-| Tool Design | UNASSESSED | L4 | CORE | Awaiting Phase 0 assessment | — |
-| Workflow | UNASSESSED | L4 | CORE | Awaiting Phase 0 assessment | — |
-| Agent | UNASSESSED | L4 | CORE | Awaiting Phase 0 assessment | — |
-| Skill | UNASSESSED | L4 | CORE | Awaiting Phase 0 assessment | — |
-| Harness | UNASSESSED | L4 | CORE | Awaiting Phase 0 assessment | — |
-| RAG | UNASSESSED | L3 | SUPPORT | Awaiting Phase 0 assessment | — |
-| MCP | UNASSESSED | L3 | SUPPORT | Awaiting Phase 0 assessment | — |
-| Memory | UNASSESSED | L3 | CORE-SUPPORT | Awaiting Phase 0 assessment | — |
-| Eval | UNASSESSED | L4 | CORE | Awaiting Phase 0 assessment | — |
-| Reliability | UNASSESSED | L3-L4 | CORE-SUPPORT | Awaiting Phase 0 assessment | — |
-| Security | UNASSESSED | L3 | SUPPORT | Awaiting Phase 0 assessment | — |
-| Python | UNASSESSED | L2-L3 | SUPPORT | Awaiting Phase 0 assessment | — |
-| Deployment | UNASSESSED | L2 | SUPPORT | Awaiting Phase 0 assessment | — |
-| AI Infrastructure | UNASSESSED | L1 | AWARENESS | Awaiting Phase 0 assessment | — |
+本文件记录能力证据、当前置信度与待验证缺口，不是课程打卡表，也不以项目完成或 Codex 产出推导能力已掌握。
 
-说明：
+## CORE
 
-1. `Target Level` 表示计划达到的掌握深度，不表示所有能力具有相同职业权重。
-2. `Priority` 表示该能力在 AI Product Engineer 路线中的战略重要性。
-3. `CORE` 能力优先要求跨场景迁移、判断、诊断和真实项目证据。
-4. `SUPPORT` 能力达到可靠独立交付即可，不要求向底层专家方向无限深入。
-5. `AWARENESS` 能力主要要求理解作用、边界、何时需要引入，以及能与专家协作。
-6. 能力升级必须依据 Phase 0 测评、后续实践、Debug、Eval 或迁移任务中的真实证据。
-7. “Codex 能帮忙实现”不能自动视为学习者掌握该能力。
+| 能力领域 | 当前状态 | 证据 | 置信度 | 待验证 / 下一步 |
+| --- | --- | --- | --- | --- |
+| Product Judgment | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| AI UX / Human-AI Interaction | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Frontend Engineering | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Workflow Design | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Context Engineering | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Tool / Capability Design | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Eval | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| AI-assisted Engineering | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+
+## CORE-SUPPORT
+
+| 能力领域 | 当前状态 | 证据 | 置信度 | 待验证 / 下一步 |
+| --- | --- | --- | --- | --- |
+| TypeScript | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| React | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Skill Design | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Agent Design | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Testing / Code Review | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Integration Engineering | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Reliability Engineering | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Harness application understanding | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+
+## SUPPORT
+
+| 能力领域 | 当前状态 | 证据 | 置信度 | 待验证 / 下一步 |
+| --- | --- | --- | --- | --- |
+| JavaScript | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Next.js | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| HTTP / API | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Async Programming | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Git | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Backend | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Database / Data Modeling | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Authentication / Authorization | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| RAG | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| MCP | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Security | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Model Literacy | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Python | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+| Deployment | Not Assessed | No formal evidence recorded | Baseline Unknown | Phase 0 正式开始后建立基线 |
+
+## Evidence Rules
+
+- 项目完成、Codex 产出、阅读资料或听懂讲解，均不能单独作为“已掌握”的充分证据。
+- 能力升级必须关联具体的解释、修改、调试、验证、迁移或评审证据。
+- 当前 `Not Assessed` 与 `Baseline Unknown` 不是能力低的结论，而是尚未产生正式、可归档证据的真实状态。
+
+## Historical v1.0.1 Target Calibration
+
+v1.0.1 的目标深度与优先级校准已作为版本历史保留在 [CHANGELOG.md](CHANGELOG.md)。该记录不构成当前能力评估或用户能力证据。

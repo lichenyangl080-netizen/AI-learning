@@ -1,4 +1,100 @@
-# AI Product Engineer Curriculum v1.0
+# AI Product Engineer Curriculum v1.1
+
+## 职业定位
+
+目标角色：**AI Product Engineer**。
+
+培养目标不是传统后端专家、ML 研究工程师、AI 基础设施工程师或单一框架专家，而是能够独立完成 AI 原生产品的识别、设计、构建、评估、调试与交付的产品型工程师。路线强调可迁移的长期能力，不随短期框架热点漂移。
+
+## 能力分层
+
+### CORE
+
+这些是长期职业身份的核心能力，应逐步达到跨场景判断与独立交付水平：
+
+- Product Judgment
+- AI UX / Human-AI Interaction
+- Frontend Engineering
+- Workflow Design
+- Context Engineering
+- Tool / Capability Design
+- Eval
+- AI-assisted Engineering
+
+### CORE-SUPPORT
+
+这些能力需要有实质工程深度，但不以基础设施专家深度为目标：
+
+- TypeScript
+- React
+- Skill Design
+- Agent Design
+- Testing / Code Review
+- Integration Engineering
+- Reliability Engineering
+- Harness 的应用层理解
+
+### SUPPORT
+
+这些能力达到可靠独立交付深度即可：
+
+- JavaScript
+- Next.js
+- HTTP / API
+- Async Programming
+- Git
+- Backend
+- Database / Data Modeling
+- Authentication / Authorization
+- RAG
+- MCP
+- Security
+- Model Literacy
+- Python
+- Deployment
+
+### AWARENESS / TRIGGERED
+
+以下不是主线长期专项；仅在产品需求、项目瓶颈或工作场景触发时学习：
+
+- Multi-Agent Systems
+- AI Infrastructure
+- Kubernetes
+- Kafka
+- Advanced Distributed Systems
+- vLLM Internals
+- Model Training
+- RLHF
+- CUDA / GPU Kernels
+
+## 教学路线原则
+
+课程不得采用机械串行模式：
+
+```text
+Skill 学完 → Workflow 学完 → RAG 学完
+```
+
+应采用**完整能力闭环 + 多能力螺旋加深**。每个阶段都可以自然涉及产品、前端、工作流、工具、上下文、评估、后端和可靠性，但不同阶段的深度不同。
+
+每个阶段应围绕真实产品问题组织，并明确：
+
+- 当前场景与用户价值；
+- 本阶段主能力与辅助能力；
+- 最小可交付成果；
+- 可观察的能力证据；
+- 常见失败模式；
+- 进入下一阶段的条件。
+
+AI Product Engineer 必须具备足够工程深度，能解释、修改、诊断和承担系统结果，只是不与传统后端或基础设施专家在底层深度上正面竞争。
+
+## 当前阶段保护
+
+Phase 0 保持为 `PLANNING`。本课程规范升级不开始正式学习、正式测评、能力评级或考试，也不产生学习能力证据。当前权威状态以 [CURRENT_STATE.md](CURRENT_STATE.md) 为准。
+
+## Retained v1.0 phase reference
+
+以下 v1.0 阶段说明作为历史课程骨架保留；其能力分层与定位如与本页 v1.1 内容冲突，均以 v1.1 为准。
 
 ## 职业定位
 

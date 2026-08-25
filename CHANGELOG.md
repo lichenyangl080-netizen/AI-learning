@@ -1,5 +1,17 @@
 # Curriculum Changelog
 
+## v1.1 — Curriculum operating specification upgrade
+
+- 明确 AI Product Engineer 职业定位与 CORE / CORE-SUPPORT / SUPPORT / AWARENESS 能力分层
+- 新增教学协议
+- 新增跨对话状态协议
+- 新增每 6 周一次的路线审计政策
+- 将能力管理改为基于证据，而非课程完成或 Codex 产出
+- 固定当前状态为 `Phase 0 — PLANNING`
+- 明确 `Formal Learning Started: NO`
+- 明确 `Formal Assessment Started: NO`
+- 明确本次不开始正式测评
+
 ## v1.0.1 — Ability target calibration
 
 - 为 Ability Matrix 增加 `Priority`
