@@ -1,5 +1,15 @@
 # Curriculum Changelog
 
+## v1.1.1 — Curriculum consistency correction
+
+- 删除 CURRICULUM.md 中并存的旧 v1.0 Phase 结构
+- 正式建立唯一有效的 P0-P8 v1.1 课程结构
+- 恢复 Ability Matrix 的 Target Level 与 Priority
+- 修正 Phase 0 Next Action
+- 明确长期训练产品在 Phase 0 后选择
+- 补充 Phase Exit Gate、Non-goals、Ability-controlled Teaching Depth、Hard Rules / Default Practices、Early User Validation
+- Formal Learning / Assessment 仍未开始
+
 ## v1.1 — Curriculum operating specification upgrade
 
 - 明确 AI Product Engineer 职业定位与 CORE / CORE-SUPPORT / SUPPORT / AWARENESS 能力分层
