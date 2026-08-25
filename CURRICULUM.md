@@ -1,4 +1,4 @@
-# AI Product Engineer Curriculum v1.1
+# AI Product Engineer Curriculum v1.1.1
 
 ## 职业定位
 
@@ -32,7 +32,7 @@ Multi-Agent Systems、AI Infrastructure、Kubernetes、Kafka、Advanced Distribu
 
 ### Objective
 
-建立真实能力基线，并确定后续课程密度；当前保持 PLANNING，未开始正式学习或正式测评。
+建立真实能力基线，并确定后续课程密度；当前保持 PLANNING，未开始正式学习或正式测评。P0 不会评估整张 Ability Matrix，延期能力保持 `Not Yet Assessed`。
 
 ### Core Capabilities
 
@@ -56,7 +56,7 @@ Multi-Agent Systems、AI Infrastructure、Kubernetes、Kafka、Advanced Distribu
 
 ### Non-goals
 
-不在本阶段认证 L3 或 L4；不选择长期训练产品；不将工具产出视为用户掌握。
+不在本阶段认证 L3 或 L4；不选择长期训练产品；不将工具产出视为用户掌握；不评估整张 Ability Matrix，延期能力保持 `Not Yet Assessed`。
 
 ### Triggered Topics
 

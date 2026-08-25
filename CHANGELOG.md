@@ -9,6 +9,7 @@
 - 明确长期训练产品在 Phase 0 后选择
 - 补充 Phase Exit Gate、Non-goals、Ability-controlled Teaching Depth、Hard Rules / Default Practices、Early User Validation
 - Formal Learning / Assessment 仍未开始
+- 收窄 Phase 0 主测范围，并区分 `Not Assessed` / `Not Yet Assessed`
 
 ## v1.1 — Curriculum operating specification upgrade
 

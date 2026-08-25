@@ -1,6 +1,6 @@
 # Current Learning State
 
-Curriculum Version: v1.1
+Curriculum Version: v1.1.1
 
 Current Phase: P0 — Evidence-based AI-native Capability Baseline
 
@@ -49,4 +49,4 @@ The long-term training product must be selected only after Phase 0 is complete, 
 4. Relevant current section of `CURRICULUM.md`
 5. `TEACHING_PROTOCOL.md`
 
-Next Action: Finalize ASSESSMENT_SPEC.md based on Curriculum v1.1, Teaching Protocol, and Ability Matrix.
+Next Action: Finalize ASSESSMENT_SPEC.md based on Curriculum v1.1.1, Teaching Protocol, and Ability Matrix.
