@@ -67,3 +67,5 @@ Phase 0 只主测以下范围：Web / Frontend boundary、JavaScript / TypeScrip
 - 能力升级必须关联解释、修改、调试、验证、迁移或评审中的具体证据。
 - Phase 0 原则上最高正式确认到 `Confirmed L2`。更强表现可记录为 `L3 Candidate`，但不能仅凭 Phase 0 正式认证 L3。
 - L4 必须依赖长期跨项目证据。
+- Phase 0 status and evidence semantics are defined by `ASSESSMENT_SPEC.md`.
+

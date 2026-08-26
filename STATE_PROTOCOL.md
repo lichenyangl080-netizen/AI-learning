@@ -1,36 +1,33 @@
 # State Protocol
 
-本协议定义跨对话的课程状态管理方式。
+## State File Responsibilities
 
-## 状态文件职责
+- `CURRENT_STATE.md`: sole current learning progress and next action.
+- `ABILITY_MATRIX.md`: capability evidence, confidence, targets, priorities, and verification gaps; not a project checklist.
+- `ASSESSMENT_SPEC.md`: the operating specification for Phase 0 evidence gathering.
+- `REVIEW_QUEUE.md`: review or re-verification needs.
+- `PROJECT_STATE.md`: project delivery state, separate from learning state.
+- `LEARNING_LOG.md`: learning history.
+- `CHANGELOG.md`: versions of course and operating specifications.
 
-- `CURRENT_STATE.md`：唯一当前学习进度与下一步。
-- `ABILITY_MATRIX.md`：能力证据、当前置信度与待验证缺口；不是项目完成清单。
-- `REVIEW_QUEUE.md`：需要复习或再次验证的内容；如当前无项目，可保留空队列并按需建立。
-- `PROJECT_STATE.md`：项目实施进度；不等同于学习进度。
-- `LEARNING_LOG.md`：学习历史；正式学习开始后以追加为主。
-- `CHANGELOG.md`：课程规范、路线或状态结构的版本变化。
+## Single Source of Truth
 
-## 单一事实源与冲突优先级
+Current state is `CURRENT_STATE.md`; capability conclusions require evidence in `ABILITY_MATRIX.md`; project completion never proves mastery. Conflicts resolve as: current repository state files > committed history > conversation memory > model inference.
 
-- 当前学习状态以 `CURRENT_STATE.md` 为唯一事实源。
-- 能力判断以 `ABILITY_MATRIX.md` 中的具体证据为准。
-- 项目是否完成不得直接推导为能力已掌握。
-- 冲突时优先级为：当前仓库状态文件 > 已提交历史 > 对话记忆 > 模型推测。
+## Operating States
 
-## 每次学习结束后的归档
+### Planning
 
-正式学习开始后，每次课或项目里程碑结束时，应更新：
+Formal Learning: `NO`; Formal Assessment: `NO`; no formal evidence yet.
 
-1. 本次实际完成内容；
-2. 已产生的能力证据；
-3. 未解决问题与风险；
-4. 需要复习或再验证的内容；
-5. 下次最小行动；
-6. 是否发生课程路线变更，以及变更理由。
+### Phase 0 Formal Assessment
 
-不得把“计划做什么”写成“已经完成什么”。
+Formal Learning: `NO`; Formal Assessment: `YES`; assessment evidence is valid, the Ability Matrix may update when evidence is sufficient, and an assessment run state may be maintained.
 
-## 当前基线
+### P1+ Formal Learning
 
-在 `Formal Learning Started: NO` 期间，本协议不要求产生课程、测评或能力证据；它只要求维护真实的规划状态，并在恢复时从当前状态文件开始。
+Formal Learning: `YES`; Formal Assessment is `YES` or `NO` depending on whether a formal assessment is active.
+
+## Archival
+
+After a formal learning session, project milestone, or formal Phase 0 assessment checkpoint, record only actual completion, evidence, unresolved risks, review/re-verification needs, the next minimal action, and any route deviation with reason. Do not record plans as completion. Phase 0 assessment may be checkpointed even while Formal Learning remains `NO`.

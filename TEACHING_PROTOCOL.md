@@ -19,6 +19,28 @@ TEACHING_PROTOCOL.md
 ↓
 开始本次学习
 ```
+## Conditional Phase 0 Assessment Loading
+
+When P0 assessment is being planned, started, or resumed, read:
+
+```text
+CURRENT_STATE.md
+↓
+ABILITY_MATRIX.md
+↓
+REVIEW_QUEUE.md
+↓
+Relevant P0 section of CURRICULUM.md
+↓
+TEACHING_PROTOCOL.md
+↓
+ASSESSMENT_SPEC.md
+↓
+Active assessment run state, if one exists
+```
+
+Do not create an assessment run file until formal assessment explicitly starts.
+
 
 禁止只根据聊天记忆、上一段对话印象或模型推测决定教学内容。若聊天记忆与仓库状态冲突，仓库中的状态文件优先。
 

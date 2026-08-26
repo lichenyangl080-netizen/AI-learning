@@ -1,5 +1,15 @@
 # Curriculum Changelog
 
+## Assessment Spec v1.0 — Phase 0 operating specification
+
+- Added adaptive four-stage Phase 0 specification with AI, search, and Codex as normal tools
+- Added qualitative evidence dimensions, Minimum Evidence Rule, and no numeric total score
+- Defined Confirmed / Provisional / L3 Candidate semantics, blocking gaps, and curriculum routing
+- Added fresh-task, metadata, and public-repository privacy rules
+- Corrected State Protocol for assessment-before-P1 and conditional ASSESSMENT_SPEC loading
+- Formal assessment has not started; curriculum remains v1.1.1
+
+
 ## v1.1.1 — Curriculum consistency correction
 
 - 删除 CURRICULUM.md 中并存的旧 v1.0 Phase 结构
