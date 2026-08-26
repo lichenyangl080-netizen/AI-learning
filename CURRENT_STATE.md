@@ -1,6 +1,8 @@
 # Current Learning State
 
 Curriculum Version: v1.1.1
+Assessment Spec Version: v1.0
+
 
 Current Phase: P0 — Evidence-based AI-native Capability Baseline
 

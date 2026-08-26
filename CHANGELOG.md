@@ -7,6 +7,9 @@
 - Defined Confirmed / Provisional / L3 Candidate semantics, blocking gaps, and curriculum routing
 - Added fresh-task, metadata, and public-repository privacy rules
 - Corrected State Protocol for assessment-before-P1 and conditional ASSESSMENT_SPEC loading
+- Distinguish Initial / Assisted / Ownership evidence
+- Add Assessor Intervention Policy
+- Separate Evidence Sufficiency from Confidence
 - Formal assessment has not started; curriculum remains v1.1.1
 
 

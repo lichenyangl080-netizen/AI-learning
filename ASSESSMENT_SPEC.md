@@ -75,9 +75,11 @@ P0 may produce `Confirmed L0`, `Confirmed L1`, `Provisional L2`, `Confirmed L2`,
 - **L3 Candidate**: unusually strong P0 evidence of failure diagnosis, cause identification, repair, trade-off analysis, and transfer; it remains a candidate until later project evidence confirms L3.
 - **Insufficient Evidence**: do not guess; retain `Not Assessed`, explicitly record insufficient evidence, and route to `VERIFY-IN-PROJECT` or a later targeted check. Never downgrade because evidence was not observed.
 
-## 8. Evidence Confidence
+## 8. Evidence Sufficiency and Confidence
 
-Confidence is separate from capability level. Use `Insufficient Evidence`, `Low`, `Medium`, or `High`, based on amount, diversity, consistency, and whether evidence survived changed constraints. High confidence is not a high ability level.
+Evidence Sufficiency is separate from capability level and uses `Sufficient`, `Partial`, `Missing`, or `Conflicting`. Confidence uses only `Low`, `Medium`, or `High`, based on amount, diversity, consistency, and whether evidence survived changed constraints. High confidence is not a high ability level.
+
+When evidence is not sufficient, retain `Not Assessed` and record `Missing` or `Partial` evidence rather than guessing a level.
 
 ## 9. Blocking Gaps
 
@@ -114,3 +116,25 @@ P0 completes only when main-scope abilities have sufficient starting evidence or
 `Observe → Research → Build → Explain → Modify → Debug → Verify`
 
 The assessment asks whether the learner can use modern AI tools while retaining understanding, judgment, verification, and ownership—not how much syntax they can reproduce without tools.
+## 16. Learning During Assessment / Evidence Origin
+
+Phase 0 permits AI, search, documentation, and learning new knowledge. Evidence must distinguish:
+
+- **Initial Evidence**: judgment and understanding demonstrated before help.
+- **Assisted Evidence**: performance completed after AI, documentation, hints, or explanation.
+- **Ownership Evidence**: after help, whether the learner can re-explain, modify, verify, debug, or transfer the result.
+
+Help does not invalidate assessment, but performance immediately after teaching cannot be treated as independent prior-mastery evidence. Ownership regained after help may inform routing and later capability evidence.
+
+## 17. Assessor Intervention Policy
+
+If the learner is stuck:
+
+1. record the current evidence;
+2. allow research;
+3. provide a hint when necessary;
+4. provide the smallest explanation if progress remains blocked;
+5. continue observing modification, verification, debugging, or transfer.
+
+Assessment must not deadlock around one unknown fact. A result explicitly taught during the run is not prior mastery; learning followed by ownership can be valid routing and later-evidence input.
+
