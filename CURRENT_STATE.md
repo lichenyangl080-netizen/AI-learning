@@ -6,9 +6,9 @@ Assessment Spec Version: v1.0
 
 Current Phase: P0 — Evidence-based AI-native Capability Baseline
 
-Module: P0.0 — Assessment Specification / Ready for Review
+Module: P0.0 — Assessment Specification Frozen / Ready to Start
 
-Status: PLANNING
+Status: READY
 
 Formal Learning Started: NO
 
@@ -16,7 +16,7 @@ Formal Assessment Started: NO
 
 ## Current Focus
 
-Assessment operating-specification review; no formal assessment or learning has started.
+Planning complete. Curriculum v1.1.1 and Assessment Spec v1.0 are frozen. Awaiting explicit user instruction to start formal Phase 0 assessment.
 
 ## Explicitly Not Started
 
@@ -34,4 +34,4 @@ Assessment operating-specification review; no formal assessment or learning has 
 5. `TEACHING_PROTOCOL.md`
 6. `ASSESSMENT_SPEC.md`
 
-Next Action: Review and freeze ASSESSMENT_SPEC.md before starting Phase 0.
+Next Action: Await explicit learner instruction to start Phase 0 formal assessment.
