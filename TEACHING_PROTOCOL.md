@@ -145,3 +145,7 @@ Default Practices 可适应：课时长度、例子数量、使用模型、项�
 ### Meaningful Deviation Logging
 
 如果正式教学明显偏离计划顺序、跳过某模块、提前引入 Triggered Topic 或改变某 Phase 内容，必须记录原因。正常课堂适应不等于课程改版；只有结构性变化才允许修改 `CURRICULUM.md`。
+
+## Phase 0 Evidence Fidelity
+
+Long-term records must preserve verified and unverified boundaries, evidence origin, and important instability. Teaching starts from `Curriculum Target - Verified Evidence = Learning Delta`, not a label alone. Conceptual understanding does not replace practical operation; recognition or scaffolded answers do not equal independent design, diagnosis, or debugging. Codex/IDE/tool failure is neither learner failure nor verified implementation. Final assessment archive must audit Initial, Assisted, Ownership and transfer evidence, contradictions, corrections, scaffold leakage, missing practice, scenario leakage, tool failure, and historical-project inference. Store transferable capability, not scenario-specific detail.

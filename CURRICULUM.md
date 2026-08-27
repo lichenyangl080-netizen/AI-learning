@@ -32,7 +32,7 @@ Multi-Agent Systems、AI Infrastructure、Kubernetes、Kafka、Advanced Distribu
 
 ### Objective
 
-建立真实能力基线，并确定后续课程密度；当前保持 PLANNING，未开始正式学习或正式测评。P0 不会评估整张 Ability Matrix，延期能力保持 `Not Yet Assessed`。
+建立真实能力基线，并确定后续课程密度；P0 仅评估明确范围，延期能力保持 `Not Yet Assessed`。
 
 ### Core Capabilities
 

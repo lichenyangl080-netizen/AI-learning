@@ -1,4 +1,4 @@
-# Phase 0 Assessment Specification v1.0
+# Phase 0 Assessment Specification v1.0.1
 
 ## 1. Purpose
 
@@ -103,7 +103,7 @@ For meaningful AI-assisted work, record date, assessment-spec version, run ID, t
 
 ## 13. Assessment Run Record and State Transitions
 
-Only when formal P0 starts may a run file be created. It contains the minimum state needed to resume: Run ID, spec version, date started, environment metadata, current stage, completed evidence areas, uncertain areas, blocking-gap candidates, and next action. Do not create a run file now.
+Do not create an assessment run file before formal P0 explicitly starts; after it starts, maintain only the minimum resumable technical state. It contains the minimum state needed to resume: Run ID, spec version, date started, environment metadata, current stage, completed evidence areas, uncertain areas, blocking-gap candidates, and next action. Do not create a run file now.
 
 Before formal P0: Formal Learning `NO`, Formal Assessment `NO`, status `PLANNING`, and no assessment evidence. When the learner explicitly starts P0: Formal Assessment `YES`, Formal Learning `NO`, phase remains P0, and sufficient evidence may update run state, the Ability Matrix, and gap/routing notes. After P0 Exit Gate, update matrix, gaps, routing, CURRENT_STATE, and P1 density; only then select the long-term training product. When P1 begins: Formal Learning `YES`; Formal Assessment is `NO` unless a formal assessment is active.
 
@@ -137,4 +137,9 @@ If the learner is stuck:
 5. continue observing modification, verification, debugging, or transfer.
 
 Assessment must not deadlock around one unknown fact. A result explicitly taught during the run is not prior mastery; learning followed by ownership can be valid routing and later-evidence input.
+
+
+## Evidence Fidelity Refinement
+
+Preserve concrete verified and unverified boundaries, Initial/Assisted/Ownership origin, practical-versus-conceptual evidence, learner corrections, scenario abstraction, and tool/environment failure. Recognition is not independent generation; immediately taught performance is not prior mastery; ownership after help may affect routing.
 

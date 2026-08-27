@@ -1,37 +1,24 @@
 # Current Learning State
 
 Curriculum Version: v1.1.1
-Assessment Spec Version: v1.0
-
+Assessment Spec Version: v1.0.1
 
 Current Phase: P0 — Evidence-based AI-native Capability Baseline
-
-Module: P0.0 — Assessment Specification Frozen / Ready to Start
-
-Status: READY
+Module: P0 Complete — Baseline Established / Ready for P1
+Status: P0 COMPLETE / READY FOR P1
 
 Formal Learning Started: NO
-
-Formal Assessment Started: NO
+Formal Assessment Active: NO
+Phase 0 Assessment Completed: YES
+Active Assessment Run: None
+Completed Assessment Run: ASSESSMENT_RUN_001
 
 ## Current Focus
 
-Planning complete. Curriculum v1.1.1 and Assessment Spec v1.0 are frozen. Awaiting explicit user instruction to start formal Phase 0 assessment.
+P0 baseline completed. Ability Matrix updated. P1 minimum learning density established. Await learner instruction to begin P1.
 
-## Explicitly Not Started
+## P1 Minimum Learning Density
 
-- Formal teaching
-- Formal Phase 0 assessment, ability rating, or examination
-- Long-term training product selection or implementation
-- Any user capability conclusion
+High density: JavaScript, TypeScript, React, Next.js, Browser/Client/Server mapping, HTTP/API, Async implementation, UI state/error/timeout, secrets, Git operations, diff review, testing/verification, and AI-code ownership. Light review: Structured Output, Tool/API boundary, Workflow basics, Model Literacy, deterministic code vs LLM, validation. Product Judgment introductory instruction is skipped and naturally verified in projects.
 
-## Required Files Before Resuming P0 Assessment Planning
-
-1. `CURRENT_STATE.md`
-2. `ABILITY_MATRIX.md`
-3. `REVIEW_QUEUE.md` (if present)
-4. Relevant P0 section of `CURRICULUM.md`
-5. `TEACHING_PROTOCOL.md`
-6. `ASSESSMENT_SPEC.md`
-
-Next Action: Await explicit learner instruction to start Phase 0 formal assessment.
+Next Action: Begin P1 — AI-native Web & Model Feature when learner explicitly starts formal learning.
