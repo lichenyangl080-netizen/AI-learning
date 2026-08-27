@@ -1,5 +1,18 @@
 # Curriculum Changelog
 
+## Repository consistency — Post-P0 / Pre-P1 state clarification
+
+- Archived the completed P0 baseline state and clarified that P1 has not started.
+- Defined current-versus-historical evidence precedence so completed assessment runs explain, but cannot override, a newer Ability Matrix.
+
+## Assessment Spec v1.0.1 — Evidence Fidelity Refinement
+
+- Preserve verified and unverified capability boundaries.
+- Distinguish recognition from independent generation and conceptual evidence from practical evidence.
+- Preserve Initial / Assisted / Ownership evidence semantics, tool/environment-failure semantics, scenario abstraction, and final evidence-audit requirements.
+- Give supported learner corrections priority over mistaken inference.
+- Record that Phase 0 completed under `ASSESSMENT_RUN_001` without reconstructing unavailable run metadata.
+
 ## Assessment Spec v1.0 — Phase 0 operating specification
 
 - Added adaptive four-stage Phase 0 specification with AI, search, and Codex as normal tools

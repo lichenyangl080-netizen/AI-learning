@@ -99,7 +99,7 @@ Search is normal engineering behavior. Under AI-assisted Engineering/Tool Use, o
 
 Do not store a live question bank or answer key in this public repository. When formal P0 begins, generate fresh tasks just-in-time; do not publish exact tasks or expected answers before use; use equivalent fresh tasks for reassessment where practical. A run may be named `ASSESSMENT_RUN_001`, but public records store only technical evidence summaries, never complete private transcripts or answer histories.
 
-For meaningful AI-assisted work, record date, assessment-spec version, run ID, task/scenario version, model, coding agent, search availability, approximate time, and material environment constraints. Do not store private conversations, personal-life or medical information, private documents, credentials, API keys, passwords, or full private answers. Example summary: `Async — Provisional L2: diagnosed a missing await, explained error propagation, and verified the fix; transfer evidence still needed.`
+For meaningful AI-assisted work, record, when reliably available, date, assessment-spec version, run ID, task/scenario version, model, coding agent, search availability, approximate time, and material environment constraints. Do not reconstruct unavailable metadata retrospectively. Do not store private conversations, personal-life or medical information, private documents, credentials, API keys, passwords, or full private answers. Example summary: `Async — Provisional L2: diagnosed a missing await, explained error propagation, and verified the fix; transfer evidence still needed.`
 
 ## 13. Assessment Run Record and State Transitions
 
@@ -141,6 +141,12 @@ Assessment must not deadlock around one unknown fact. A result explicitly taught
 
 ## Evidence Fidelity Refinement
 
-Preserve concrete verified and unverified boundaries, Initial/Assisted/Ownership origin, practical-versus-conceptual evidence, learner corrections, scenario abstraction, and tool/environment failure. Recognition is not independent generation; immediately taught performance is not prior mastery; ownership after help may affect routing.
+These are permanent evidence-fidelity rules:
+
+- First-pass is a snapshot only; closed-book micro-checks may be used briefly, then normal tools reopen immediately.
+- Recognition is not independent generation, and conceptual evidence is not practical implementation evidence; preserve those concrete boundaries.
+- Preserve Initial / Assisted / Ownership origin, scenario abstraction, verified and unverified scope, tool/environment failures, and a final evidence audit.
+- Learner correction overrides a mistaken assessor inference when the correction is supported by the available evidence.
+- Immediately taught performance is not prior mastery; ownership after help may influence routing and later capability evidence.
 
 

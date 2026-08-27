@@ -44,6 +44,12 @@ Do not create an assessment run file until formal assessment explicitly starts.
 
 禁止只根据聊天记忆、上一段对话印象或模型推测决定教学内容。若聊天记忆与仓库状态冲突，仓库中的状态文件优先。
 
+## Baseline Evidence Loading
+
+In the first P1 startup after P0 completion, when `ABILITY_MATRIX.md` evidence is too terse to determine the teaching delta, when Initial / Assisted / Ownership history matters, or when conceptual-versus-practical scope is ambiguous, read the most recent completed assessment run.
+
+A completed run is historical evidence: it may explain the current Matrix but cannot override an updated Matrix. Do not mechanically reread the entire run report for every lesson; load only when the detailed evidence boundary is needed.
+
 ## Default Lesson Structure
 
 教学应优先遵循：

@@ -5,9 +5,14 @@
 ## Current Baseline
 
 - Curriculum Version: v1.1.1
-- Current Phase: `P0 — Evidence-based AI-native Capability Baseline`
+- Assessment Spec Version: v1.0.1
+- Lifecycle Position: `P0 complete / P1 not started`
 - Formal Learning Started: `NO`
-- Formal Assessment Started: `NO`
+- Formal Assessment Active: `NO`
+- Phase 0 Assessment Completed: `YES`
+- Completed Assessment Run: `ASSESSMENT_RUN_001`
+
+This is an entry summary only. [CURRENT_STATE.md](CURRENT_STATE.md) remains the single source of truth for the current learning lifecycle and next action.
 
 ## Core Files
 

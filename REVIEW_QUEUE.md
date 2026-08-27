@@ -23,3 +23,5 @@ No scheduled review items yet.
 
 复习仍优先通过 P1/P2 项目中的自然再次使用完成；这不是正式学习已经开始的记录。
 
+Verification candidates do not override current `ABILITY_MATRIX.md` status; they only mark natural future re-verification opportunities.
+

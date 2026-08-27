@@ -12,7 +12,7 @@ Phase 0 只主测以下范围：Web / Frontend boundary、JavaScript / TypeScrip
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Product Judgment | Confirmed L2 | L4 | CORE | Product-semantic, deterministic-vs-LLM, risk/permission judgment; real discovery/metrics unverified. | High | Natural P1 project verification | 2026-08-27 |
 | AI UX / Human-AI Interaction | Provisional L2 | L4 | CORE | Loading/success/failure, approval and uncertainty reasoning; practical AI UI/streaming unverified. | Medium | P1 project UX verification | 2026-08-27 |
-| Frontend Engineering (including Web / Frontend boundary) | Confirmed L1 | L4 | CORE | Browser/server lifecycle and minimal HTTP runtime verified; code implementation unverified. | Medium | P1 code mapping and modification | 2026-08-27 |
+| Frontend Engineering (including Web / Frontend boundary) | Confirmed L1 | L4 | CORE | Confirmed L1 applies only to Web/Frontend boundary, browser/server responsibility, and request-lifecycle understanding; frontend implementation skill remains unassessed. | Medium | P1 code mapping and modification | 2026-08-27 |
 | Workflow Design | Provisional L2 | L4 | CORE | Deterministic/model/tool/validator responsibility and perturbation adaptation; implementation evidence needed. | Medium | P1/P2 workflow implementation | 2026-08-27 |
 | Context Engineering | Not Yet Assessed | L4 | CORE | Deferred outside Phase 0 scope | Baseline Unknown | P3 first required practice | — |
 | Tool / Capability Design | Not Yet Assessed | L4 | CORE | Deferred outside Phase 0 scope | Baseline Unknown | P3 first required practice | — |
@@ -25,7 +25,7 @@ Phase 0 只主测以下范围：Web / Frontend boundary、JavaScript / TypeScrip
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | TypeScript | Not Assessed | L3-L4 | CORE-SUPPORT | Missing practical evidence; generated code does not establish mastery. | Low | P1 practical foundation | 2026-08-27 |
 | React | Not Assessed | L3-L4 | CORE-SUPPORT | Missing implementation evidence. | Low | P1 practical foundation | 2026-08-27 |
-| Structured Output | Provisional L2 | L3 | CORE-SUPPORT | Assisted then transfer evidence for fields, validation and fallback; schema implementation unverified. | Medium | P1 schema implementation | 2026-08-27 |
+| Structured Output | Provisional L2 | L3 | CORE-SUPPORT | Assisted conceptual/design transfer evidence for fields, validation, and fallback; this is not implementation mastery. Actual JSON syntax, schema authoring, Zod / JSON Schema, and runtime validation remain unverified. | Medium | P1 schema implementation | 2026-08-27 |
 | Tool Calling | Confirmed L1 | L3 | CORE-SUPPORT | Understands tool/API, read/write, approval and permission boundary; real calls/schema unverified. | Medium | P1/P2 practical tool use | 2026-08-27 |
 | Skill Design | Not Yet Assessed | L3-L4 | CORE-SUPPORT | Deferred outside Phase 0 scope | Baseline Unknown | P3 first required practice | — |
 | Agent Design | Not Yet Assessed | L3-L4 | CORE-SUPPORT | Deferred outside Phase 0 scope | Baseline Unknown | P2 basic agent loop | — |
@@ -63,7 +63,9 @@ Phase 0 只主测以下范围：Web / Frontend boundary、JavaScript / TypeScrip
 
 ## Evidence and Confirmation Rules
 
-- `Not Assessed` 表示属于 Phase 0 主测范围，但尚未开始正式评估；`Not Yet Assessed` 表示能力已明确延期，不应在 Phase 0 被推断或评级。
+- `Not Assessed` 表示当前证据不足以赋予可靠能力等级；该能力可能已经在 P0 中被检查，但证据仍为 `Missing`、`Partial` 或 `Conflicting`。它不表示测评从未触及该能力。
+- `Not Yet Assessed` 表示能力被有意延期到其相关 Phase 或真实触发需求之前；在此之前不得推断或评级。
+- `Low` Confidence 表示因证据薄弱或缺失而对能力推断的置信度低，不表示学习者能力低。
 - 能力升级必须关联解释、修改、调试、验证、迁移或评审中的具体证据。
 - Phase 0 原则上最高正式确认到 `Confirmed L2`。更强表现可记录为 `L3 Candidate`，但不能仅凭 Phase 0 正式认证 L3。
 - L4 必须依赖长期跨项目证据。

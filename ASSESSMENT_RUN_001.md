@@ -10,6 +10,7 @@
 - Date Started: 2026-08-26
 - Date Completed: 2026-08-27
 - Tool Environment: ChatGPT, Codex, web/documentation allowed, local browser, local HTTP Server Work Sample
+- Some optional runtime metadata, including exact model, task/scenario version, and precise elapsed time, were not reliably captured during the run and are intentionally not reconstructed retrospectively.
 - Formal Learning Started: NO
 - Formal Assessment Completed: YES
 
@@ -41,7 +42,7 @@ Evidence covers loading/success/failure distinctions, different error sources, a
 **Confidence:** Medium
 **Evidence Sufficiency:** Sufficient for baseline
 
-Initial browser/server/model boundaries were unfamiliar and ordinary AI requests were sometimes framed as long-running systems. After minimal explanation and transfer, the learner explained Browser → Server → Model → Server → Browser, page-state loss on refresh, and client cancellation not automatically stopping server work. A minimal Browser → Server → HTTP API → async wait → Browser work sample was run and normal success, loading, and server HTTP 500 were verified. Independent code reading/modification and HTML/JS/React/Next implementation remain unverified. **Routing:** LEARN from real AI Web feature code mapping, not generic web definitions.
+Confirmed L1 applies only to Web/Frontend boundary, browser/server responsibility, and request-lifecycle understanding. Initial browser/server/model boundaries were unfamiliar and ordinary AI requests were sometimes framed as long-running systems. After minimal explanation and transfer, the learner explained Browser → Server → Model → Server → Browser, page-state loss on refresh, and client cancellation not automatically stopping server work. A minimal Browser → Server → HTTP API → async wait → Browser work sample was run and normal success, loading, and server HTTP 500 were verified. Frontend implementation skill, including independent code reading/modification and HTML/JS/React/Next implementation, remains unassessed. **Routing:** LEARN from real AI Web feature code mapping, not generic web definitions.
 
 ### Workflow Design
 
@@ -81,7 +82,7 @@ No actual React implementation evidence; generated or existing files do not esta
 **Confidence:** Medium
 **Evidence Sufficiency:** Partial
 
-After minimal teaching, distinguishes natural language from fixed fields, sees stable program handling value, identifies invalid enum/missing/out-of-range results, requires validation, and proposes retry/repair/fallback boundaries. This is assisted then ownership/transfer evidence, not prior mastery. JSON syntax, schema writing, Zod/JSON Schema, and runtime validator implementation are unverified. **Routing:** REVIEW via real P1 schema.
+This Provisional L2 is conceptual/design-level evidence after assisted learning and transfer, not implementation-level mastery. After minimal teaching, distinguishes natural language from fixed fields, sees stable program handling value, identifies invalid enum/missing/out-of-range results, requires validation, and proposes retry/repair/fallback boundaries. JSON syntax, schema writing, Zod/JSON Schema, and runtime validator implementation are unverified. **Routing:** REVIEW via real P1 schema.
 
 ### Tool Calling
 
@@ -167,11 +168,13 @@ Current practice is `observe product behavior → describe goal → Codex diagno
 
 **Light review:** Structured Output, Tool/API boundary, Workflow basics, Model Literacy, deterministic code versus LLM, and validation.
 
+Minimum Learning Density is a calibration overlay, not a replacement for the full P1 Core Capabilities in `CURRICULUM.md`. High density identifies the current explicit learning focus; light review identifies existing evidence for natural project review. Unmentioned P1 Core Capabilities, including Streaming, basic Eval, Token / Cost / Latency, and Model API, are not automatically skipped and enter teaching when the P1 feature requires them.
+
 **Skip introductory Product Judgment:** do not reteach why not every problem needs LLM, why high-risk actions need controls, why semantics precedes implementation, or why deterministic rules belong in code. P1 remains `real feature → expose gap → minimum explanation → Codex-assisted implementation → run → inspect → modify → verify`.
 
 ## P0 Final Result
 
-P0 Exit Gate: **PASSED**. No P1-blocking gap exists. Work Sample and Technical Defense evidence are valid; deferred capabilities remain deferred; no L3/L4 is certified.
+P0 Exit Gate: **PASSED**. No P1-blocking gap exists. The Work Sample and design-level Technical Defense / Perturbation provided sufficient P0 routing evidence. Implementation-based perturbation remained incomplete because the timeout/cancellation modification was blocked by Codex tool failure. Deferred capabilities remain deferred; no L3/L4 is certified.
 
 
 
