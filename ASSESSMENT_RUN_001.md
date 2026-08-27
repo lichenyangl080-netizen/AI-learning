@@ -157,3 +157,4 @@ Current practice is `observe product behavior → describe goal → Codex diagno
 
 P0 Exit Gate: **PASSED**. No P1-blocking gap exists. Work Sample and Technical Defense evidence are valid; deferred capabilities remain deferred; no L3/L4 is certified.
 
+

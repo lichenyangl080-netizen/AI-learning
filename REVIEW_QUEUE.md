@@ -2,7 +2,7 @@
 
 Formal curriculum has not started.
 
-No review items yet.
+No scheduled review items yet.
 
 复习优先通过后续项目中的自然再次使用完成。只有确有遗忘风险时才加入显式复习任务。
 
@@ -22,3 +22,4 @@ No review items yet.
 - Structured Output — immediate P1 implementation review
 
 复习仍优先通过 P1/P2 项目中的自然再次使用完成；这不是正式学习已经开始的记录。
+

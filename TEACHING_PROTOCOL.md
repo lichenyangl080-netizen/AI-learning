@@ -149,3 +149,8 @@ Default Practices 可适应：课时长度、例子数量、使用模型、项�
 ## Phase 0 Evidence Fidelity
 
 Long-term records must preserve verified and unverified boundaries, evidence origin, and important instability. Teaching starts from `Curriculum Target - Verified Evidence = Learning Delta`, not a label alone. Conceptual understanding does not replace practical operation; recognition or scaffolded answers do not equal independent design, diagnosis, or debugging. Codex/IDE/tool failure is neither learner failure nor verified implementation. Final assessment archive must audit Initial, Assisted, Ownership and transfer evidence, contradictions, corrections, scaffold leakage, missing practice, scenario leakage, tool failure, and historical-project inference. Store transferable capability, not scenario-specific detail.
+
+## Realistic AI-native Coding
+
+Codex and coding agents may normally support diagnosis and implementation. Do not require the learner to generate a complete debug path closed-book like a traditional no-AI programmer. Observe whether the learner can frame the goal, provide relevant context, question agent diagnosis, request evidence, understand key responsibility layers, identify irrelevant changes, review key diffs, run and verify real behavior, and retain ownership after requirement changes.
+
