@@ -59,13 +59,21 @@ Can compose model, retrieval, tool/API, calculator, and validator roles; rejects
 
 Forms an initial judgment, uses AI to close gaps, questions complex suggestions, and verifies product behavior rather than accepting Codex completion. Codex edit-tool failure was treated as an environment failure, not learner failure; timeout/cancellation was proposed but not implemented or runtime-verified. Code-level causal reasoning, diff review, and debugging ownership remain weak. **Routing:** VERIFY-IN-PROJECT.
 
-### TypeScript and React
+### TypeScript
 
 **Final Status:** Not Assessed
 **Confidence:** Low
 **Evidence Sufficiency:** Missing
 
-No actual TypeScript or React implementation evidence; generated or existing files do not establish mastery. **Routing:** LEARN.
+No actual TypeScript implementation evidence; generated or existing files do not establish mastery. **Routing:** LEARN.
+
+### React
+
+**Final Status:** Not Assessed
+**Confidence:** Low
+**Evidence Sufficiency:** Missing
+
+No actual React implementation evidence; generated or existing files do not establish mastery. **Routing:** LEARN.
 
 ### Structured Output
 
@@ -91,13 +99,21 @@ Moved from “API as model interface” to API as general software capability; u
 
 Judgment evidence includes checking source-of-truth consistency, empty/large input, failures, repeats, isolation, persistence, and that passing tests may miss requirement errors. No test authoring, real diff review, independent bug localization, or test-system evidence exists; scaffolded recognition is not debugging evidence. **Routing:** LEARN.
 
-### JavaScript and Next.js
+### JavaScript
 
 **Final Status:** Not Assessed
 **Confidence:** Low
 **Evidence Sufficiency:** Missing
 
-No actual implementation evidence. JavaScript is a learning delta, not an assessment failure. **Routing:** LEARN.
+No actual JavaScript implementation evidence. JavaScript is a learning delta, not an assessment failure. **Routing:** LEARN.
+
+### Next.js
+
+**Final Status:** Not Assessed
+**Confidence:** Low
+**Evidence Sufficiency:** Missing
+
+No actual Next.js implementation evidence. **Routing:** LEARN.
 
 ### HTTP / API
 
@@ -156,5 +172,6 @@ Current practice is `observe product behavior → describe goal → Codex diagno
 ## P0 Final Result
 
 P0 Exit Gate: **PASSED**. No P1-blocking gap exists. Work Sample and Technical Defense evidence are valid; deferred capabilities remain deferred; no L3/L4 is certified.
+
 
 
