@@ -111,6 +111,38 @@ AI、搜索、官方文档、Codex、代码生成与调试工具均属于默认�
 - 已学概念再次出现时，用 1–2 句话回顾；只有明显遗忘或理解错误时才重讲。
 - 提问应服务于判断、设计、解释、调试或验证，避免为制造课堂感而连续提问基础定义。
 
+## Phase-start Research and Planning
+
+Before beginning each major curriculum Phase after P0, perform a dedicated Phase-start research and planning step before formal instruction begins. A major Phase means P1, P2, P3, and later Phases; this rule does not apply to every lesson, submodule, or ordinary project iteration.
+
+The Phase-start process must:
+
+1. Read the current repository state, including `CURRENT_STATE.md`, `ABILITY_MATRIX.md`, `REVIEW_QUEUE.md` when relevant, the relevant `CURRICULUM.md` section, and prior-phase evidence when needed.
+2. Research current external information relevant to the Phase. Prefer authoritative and up-to-date sources: official documentation, primary technical sources, current engineering practices, high-quality recent open-source implementations, and recent product or job-market evidence when it materially helps planning.
+3. Compare Curriculum targets, current learner evidence, current technology/practice, and current project needs.
+4. Produce a Phase Execution Plan before formal teaching begins.
+
+The Phase Execution Plan should cover, when relevant:
+
+- Phase objective;
+- Learning Delta;
+- training product / project;
+- capability sequence and major milestones;
+- implementation practice, debugging / failure scenarios, and verification / testing / Eval;
+- required evidence;
+- tools / frameworks;
+- cost / latency / reliability considerations;
+- triggered topics; and
+- explicit non-goals.
+
+Present the Phase Execution Plan to the learner for confirmation before formal Phase instruction begins.
+
+Phase-start research may update execution details, examples, tools, frameworks, and teaching sequence based on current information. It must not silently redesign the long-term Curriculum; structural route changes require explicit justification and learner agreement.
+
+Phase-start Research & Planning is not reassessment. Reuse existing `ABILITY_MATRIX.md` and completed assessment evidence; do not rebuild the learner baseline merely because a new Phase begins. Task-local First-pass diagnosis may still be used during learning when needed.
+
+For the current state, P0 is complete. P1 must therefore proceed as: P1 research → P1 Execution Plan → learner confirmation → formal P1 learning. Do not start another P1 capability assessment.
+
 ## No Phase-entry Reassessment After P0
 
 This is a Hard Rule.
