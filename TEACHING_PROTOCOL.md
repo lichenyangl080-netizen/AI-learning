@@ -111,6 +111,29 @@ AI、搜索、官方文档、Codex、代码生成与调试工具均属于默认�
 - 已学概念再次出现时，用 1–2 句话回顾；只有明显遗忘或理解错误时才重讲。
 - 提问应服务于判断、设计、解释、调试或验证，避免为制造课堂感而连续提问基础定义。
 
+## No Phase-entry Reassessment After P0
+
+This is a Hard Rule.
+
+Once Phase 0 has been completed, later phases must inherit the existing `ABILITY_MATRIX.md` and completed assessment evidence.
+
+Do not start a new broad capability assessment merely because a new Phase, project, lesson, or conversation begins.
+
+A First-pass after P0 is task-local teaching diagnosis only:
+
+- it should concern the capability immediately needed by the current task;
+- it should normally take only a few minutes or less;
+- it must not re-test multiple previously assessed domains;
+- it must not rebuild the learner baseline or block Phase entry;
+- existing verified evidence should be reused instead of re-tested.
+
+A new formal reassessment is allowed only when:
+
+1. the learner explicitly requests reassessment; or
+2. repository state explicitly marks an assessment as active.
+
+P1 startup therefore means: select/confirm the P1 training product → begin formal P1 learning. It does not mean “start a P1 capability assessment”.
+
 ## Hard Rules
 
 ### Phase Exit Gate

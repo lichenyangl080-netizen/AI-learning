@@ -17,7 +17,7 @@ Baseline Reference: ASSESSMENT_RUN_001.md — read when P1 startup or evidence-b
 
 ## Current Focus
 
-P0 baseline completed. Ability Matrix updated. P1 minimum learning density established. Select or confirm the P1 training product before P1 begins; await learner instruction to start formal learning.
+P0 baseline completed. Ability Matrix updated. P1 minimum learning density established. P1 startup does not require a new capability assessment: reuse the completed P0 baseline and use only task-local First-pass diagnosis when needed. Select or confirm the P1 training product before P1 begins; await learner instruction to start formal learning.
 
 ## P1 Minimum Learning Density
 
