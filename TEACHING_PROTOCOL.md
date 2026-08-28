@@ -50,6 +50,12 @@ In the first P1 startup after P0 completion, when `ABILITY_MATRIX.md` evidence i
 
 A completed run is historical evidence: it may explain the current Matrix but cannot override an updated Matrix. Do not mechanically reread the entire run report for every lesson; load only when the detailed evidence boundary is needed.
 
+## Project Selection Preference
+
+When multiple projects can provide equivalent curriculum evidence, prefer AI-native products with meaningful visual design, interaction design, state transitions, and frontend craft over pure data-processing or admin-style projects.
+
+The learner has shown sustained interest in visual/interaction iteration through prior product work. Treat `Design Engineering / Visual Frontend / AI-native UX` as a candidate specialization to verify during P1, not as a confirmed specialization or curriculum replacement.
+
 ## Default Lesson Structure
 
 教学应优先遵循：

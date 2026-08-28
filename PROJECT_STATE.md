@@ -8,6 +8,8 @@ Reason:
 
 Phase 0 已完成。现在应基于已建立的能力基线与 P1 学习价值选择或确认 P1 training product。
 
+Selection preference: meaningful visual/interaction design space + real AI-native UI states + sufficient P1 engineering coverage.
+
 ## Independent Graduation Project
 
 Status: NOT_STARTED
