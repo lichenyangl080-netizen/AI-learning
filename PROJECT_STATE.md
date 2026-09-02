@@ -8,7 +8,7 @@ Reason:
 
 P1 formal learning is in progress. `p1-async-micro-lab` is the current P1 Micro Lab / training environment, not a confirmed long-term Integration Product. The long-term P1 Integration Product remains unconfirmed.
 
-Selection preference: meaningful visual/interaction design space + real AI-native UI states + sufficient P1 engineering coverage.
+Selection preference: primary Product / Capability / Workflow / Context / Tool / Eval learning value + formal Visual / Interaction / AI-native UX secondary-axis space + sufficient supporting engineering literacy coverage.
 
 ## Independent Graduation Project
 

@@ -1,5 +1,13 @@
 # Curriculum Changelog
 
+## v1.2 — AI-native Product Builder route recalibration (2026-09-02)
+
+- Trigger: learner explicitly chose an AI-native Product Builder orientation after questioning the ROI of deep traditional engineering under increasingly capable coding agents.
+- Conclusion: structural recalibration, not a full curriculum replacement; the P0–P8 backbone and long-term evidence loop remain.
+- Main impact: Engineering becomes supporting literacy; Product / AI UX / Workflow / Context / Tool / Eval become primary; Visual / Interaction becomes a formal secondary axis.
+- Reweighted P1–P8 objectives, evidence, exit gates, non-goals, and teaching emphasis while preserving real implementation, runtime verification, diff review, and product-behavior evidence requirements.
+- Preserved current P1 progress, P0 historical evidence, and deferred Provider labs; Assessment Spec remains v1.0.1.
+
 ## Repository consistency — Post-P0 / Pre-P1 state clarification
 
 - Archived the completed P0 baseline state and clarified that P1 has not started.

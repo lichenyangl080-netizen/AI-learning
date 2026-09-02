@@ -1,13 +1,14 @@
-# AI Product Engineer Learning System
+# AI-native Product Builder Learning System
 
-跨对话的 AI Product Engineer 课程、能力证据、项目状态与审计事实源。
+跨对话的 AI-native Product Builder 课程、能力证据、项目状态与审计事实源。
 
 ## Current Baseline
 
-- Curriculum Version: v1.1.1
+- Curriculum Version: v1.2
 - Assessment Spec Version: v1.0.1
-- Lifecycle Position: `P0 complete / P1 not started`
-- Formal Learning Started: `NO`
+- Lifecycle Position: `P1 in progress`
+- Current Phase: `P1 — AI Product Technical Literacy / Engineering Literacy Foundation`
+- Formal Learning Started: `YES`
 - Formal Assessment Active: `NO`
 - Phase 0 Assessment Completed: `YES`
 - Completed Assessment Run: `ASSESSMENT_RUN_001`

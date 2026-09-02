@@ -54,7 +54,7 @@ A completed run is historical evidence: it may explain the current Matrix but ca
 
 When multiple projects can provide equivalent curriculum evidence, prefer AI-native products with meaningful visual design, interaction design, state transitions, and frontend craft over pure data-processing or admin-style projects.
 
-The learner has shown sustained interest in visual/interaction iteration through prior product work. Treat `Design Engineering / Visual Frontend / AI-native UX` as a candidate specialization to verify during P1, not as a confirmed specialization or curriculum replacement.
+Visual Design / Interaction Design / AI-native UX / Design Engineering literacy is a formal long-term secondary learning axis alongside the primary Product / Capability / Workflow / Context / Tool / Eval axis. Confirmed learning priority does not equal confirmed learner capability: no visual or interaction `ABILITY_MATRIX.md` Current Status may change without new evidence.
 
 ## Default Lesson Structure
 
@@ -359,7 +359,7 @@ Phase-start research may update execution details, examples, tools, frameworks, 
 
 Phase-start Research & Planning is not reassessment. Reuse existing `ABILITY_MATRIX.md` and completed assessment evidence; do not rebuild the learner baseline merely because a new Phase begins. Task-local First-pass diagnosis may still be used during learning when needed.
 
-For the current state, P0 is complete. P1 must therefore proceed as: P1 research → P1 Execution Plan → learner confirmation → formal P1 learning. Do not start another P1 capability assessment.
+For every future major Phase, the process is: Phase research → Phase Execution Plan → learner confirmation → formal Phase learning. Apply this as a generic Phase-start rule; determine current progress only from `CURRENT_STATE.md`, and do not use it to infer or restore a Pre-P1 state.
 
 ## No Phase-entry Reassessment After P0
 
