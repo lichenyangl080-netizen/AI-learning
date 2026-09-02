@@ -1,6 +1,6 @@
 # Teaching Protocol
 
-本协议规定 AI Product Engineer 课程的教学与恢复方式。它约束教学过程，不代表任何课程已经开始。
+本协议规定 AI-native Product Builder 课程的教学与恢复方式。它约束教学过程，不代表任何课程已经开始。
 
 ## New Conversation Startup Order
 
@@ -268,7 +268,7 @@ Cognitive feedback does not replace implementation evidence. It helps build the 
 
 ## P1 Application
 
-For P1 — AI-native Web & Model Feature, this learning method should normally favor a progression similar to:
+For P1 — AI Product Technical Literacy / Engineering Literacy Foundation, this learning method should normally favor a progression similar to:
 
 ```text
 Browser / Client / Server / Request lifecycle
