@@ -24,3 +24,10 @@
 - Baseline established; no L3/L4 certification.
 - P1 minimum learning density established.
 - Next step: select or confirm the P1 training product, then start P1 when the learner explicitly begins formal learning.
+
+## P1 Checkpoint — 2026-09-02
+
+- Formal P1 learning started; current Micro Lab: `p1-async-micro-lab`.
+- Completed request lifecycle, async failure/race/cancellation, React stale-response, and TypeScript/Zod runtime-validation labs; Model API / Structured Output concepts covered.
+- Real Provider Model API and Provider Structured Output labs are deferred until a provider API key is available; they remain required before the P1 Exit Gate.
+- Next: continue the next P1 module; retain deferred Provider evidence in the review queue.

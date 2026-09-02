@@ -2,11 +2,11 @@
 
 ## Long-term Training Product
 
-Status: NOT_SELECTED
+Status: P1_IN_PROGRESS / INTEGRATION_PRODUCT_NOT_CONFIRMED
 
 Reason:
 
-Phase 0 已完成。现在应基于已建立的能力基线与 P1 学习价值选择或确认 P1 training product。
+P1 formal learning is in progress. `p1-async-micro-lab` is the current P1 Micro Lab / training environment, not a confirmed long-term Integration Product. The long-term P1 Integration Product remains unconfirmed.
 
 Selection preference: meaningful visual/interaction design space + real AI-native UI states + sufficient P1 engineering coverage.
 

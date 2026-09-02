@@ -3,12 +3,13 @@
 Curriculum Version: v1.1.1
 Assessment Spec Version: v1.0.1
 
-Lifecycle Position: P0 Complete / P1 Not Started
-Current Learning Position: Ready to Start P1
-Module: P0 Complete — Baseline Established / Ready for P1
-Status: P0 COMPLETE / READY FOR P1
+Lifecycle Position: P1 In Progress
+Current Phase: P1 — AI-native Web & Model Feature
+Current Learning Position: Formal P1 Learning
+Module: P1 — Chapter 5 concepts complete; Provider labs deferred
+Status: P1 IN PROGRESS
 
-Formal Learning Started: NO
+Formal Learning Started: YES
 Formal Assessment Active: NO
 Phase 0 Assessment Completed: YES
 Active Assessment Run: None
@@ -17,7 +18,7 @@ Baseline Reference: ASSESSMENT_RUN_001.md — read when P1 startup or evidence-b
 
 ## Current Focus
 
-P0 baseline completed. Ability Matrix updated. P1 minimum learning density established. P1 startup does not require a new capability assessment: reuse the completed P0 baseline and use only task-local First-pass diagnosis when needed. Select or confirm the P1 training product before P1 begins; await learner instruction to start formal learning.
+P1 formal learning is in progress. Completed: Web request lifecycle; JavaScript async/error/timeout/cancellation/race behavior; React request-to-state-to-render interaction; TypeScript/Zod runtime validation; and Model API / Structured Output concepts. `p1-async-micro-lab` is the current P1 Micro Lab. Real Provider Model API and Provider Structured Output calls are deferred until a provider API key is available; they remain required before the P1 Exit Gate but do not block the next P1 module.
 
 ## P1 Minimum Learning Density
 
@@ -25,4 +26,4 @@ High density: JavaScript, TypeScript, React, Next.js, Browser/Client/Server mapp
 
 Minimum Learning Density is a calibration overlay, not a replacement for the full P1 Core Capabilities in `CURRICULUM.md`. High density marks areas requiring explicit focus; light review marks existing evidence for natural project review; unmentioned P1 capabilities are not automatically skipped and enter when the P1 feature requires them.
 
-Next Action: Select or confirm the P1 training product, then begin P1 — AI-native Web & Model Feature when learner explicitly starts formal learning.
+Next Action: Continue the next P1 module in the current curriculum-aligned sequence. Before the P1 Exit Gate, complete the deferred real Provider Model API and Structured Output labs when a provider API key is available.

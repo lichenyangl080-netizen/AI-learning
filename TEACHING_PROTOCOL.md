@@ -84,6 +84,10 @@ Eval / Verify
 
 禁止长期采用“定义 → 定义 → 术语堆砌 → 很久以后才实践”的教材式教学。
 
+### Section Granularity and Diagnostic Prompts
+
+保持 `Chapter → Lesson → Section` 结构，避免切成大量孤立术语小节；一个 Section 应尽量解决一个完整问题。新内容可先用不预设答案的机制题探测当前任务相关的认知模型。若学习者已能正确解释核心机制，只补必要的专业术语和边界后直接推进；不得重复测试 P0 已有充分证据的能力。学习目标是能判断、能审查 Codex、能验证真实行为，而非为手写代码而手写。
+
 ## Mental-model-first, Experiment-verified Learning
 
 For conceptually dense engineering topics, especially when the learner does not yet have strong implementation foundations, teaching should normally build a coherent mental model before relying on large project implementation.

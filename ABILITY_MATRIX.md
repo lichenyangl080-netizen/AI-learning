@@ -12,24 +12,24 @@ Phase 0 只主测以下范围：Web / Frontend boundary、JavaScript / TypeScrip
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Product Judgment | Confirmed L2 | L4 | CORE | Product-semantic, deterministic-vs-LLM, risk/permission judgment; real discovery/metrics unverified. | High | Natural P1 project verification | 2026-08-27 |
 | AI UX / Human-AI Interaction | Provisional L2 | L4 | CORE | Loading/success/failure, approval and uncertainty reasoning; practical AI UI/streaming unverified. | Medium | P1 project UX verification | 2026-08-27 |
-| Frontend Engineering (including Web / Frontend boundary) | Confirmed L1 | L4 | CORE | Confirmed L1 applies only to Web/Frontend boundary, browser/server responsibility, and request-lifecycle understanding; frontend implementation skill remains unassessed. | Medium | P1 code mapping and modification | 2026-08-27 |
+| Frontend Engineering (including Web / Frontend boundary) | Confirmed L1 | L4 | CORE | Confirmed L1 covers Web/Frontend boundary plus P1 Request Trace and React request → state → render inspection; a request-ID stale-response fix was run and verified. Broader frontend implementation remains unverified. | Medium | P1 feature code mapping and modification | 2026-09-02 |
 | Workflow Design | Provisional L2 | L4 | CORE | Deterministic/model/tool/validator responsibility and perturbation adaptation; implementation evidence needed. | Medium | P1/P2 workflow implementation | 2026-08-27 |
-| Context Engineering | Not Yet Assessed | L4 | CORE | Deferred outside Phase 0 scope | Baseline Unknown | P3 first required practice | — |
+| Context Engineering | Not Yet Assessed | L4 | CORE | P1 exposure only: Context Window; Input / Output / Reasoning Tokens; context selection, compaction, and retrieval. No assessed capability conclusion; remains deferred. | Baseline Unknown | P3 first required practice | — |
 | Tool / Capability Design | Not Yet Assessed | L4 | CORE | Deferred outside Phase 0 scope | Baseline Unknown | P3 first required practice | — |
 | Eval | Not Yet Assessed | L4 | CORE | Deferred outside Phase 0 scope | Baseline Unknown | P1 basic Eval, then P6 deepening | — |
-| AI-assisted Engineering | Provisional L2 | L4 | CORE | Questions AI, owns product verification; code causal chain/diff/debug weak. Tool failure was not learner failure. | Medium | P1 diff review and verification | 2026-08-27 |
+| AI-assisted Engineering | Provisional L2 | L4 | CORE | P1 Micro Labs include code tracing, meaningful modifications, failure injection, and runtime verification. Systematic diff review and broader debugging ownership remain limited. | Medium | P1 diff review and verification | 2026-09-02 |
 
 ## CORE-SUPPORT
 
 | Ability | Current Status | Target Level | Priority | Evidence | Confidence | Next Verification | Last Verified |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| TypeScript | Not Assessed | L3-L4 | CORE-SUPPORT | Missing practical evidence; generated code does not establish mastery. | Low | P1 practical foundation | 2026-08-27 |
-| React | Not Assessed | L3-L4 | CORE-SUPPORT | Missing implementation evidence. | Low | P1 practical foundation | 2026-08-27 |
-| Structured Output | Provisional L2 | L3 | CORE-SUPPORT | Assisted conceptual/design transfer evidence for fields, validation, and fallback; this is not implementation mastery. Actual JSON syntax, schema authoring, Zod / JSON Schema, and runtime validation remain unverified. | Medium | P1 schema implementation | 2026-08-27 |
+| TypeScript | Confirmed L1 | L3-L4 | CORE-SUPPORT | P1 TypeScript/Zod lab: real code reading and runtime verification of HTTP 200 with schema-invalid payload; broader type design and independent implementation remain unverified. | Medium | P1 practical foundation and data-contract modification | 2026-09-02 |
+| React | Confirmed L1 | L3-L4 | CORE-SUPPORT | P1 React lab: traced request → state → render and applied a request-ID stale-response fix with runtime verification; broader component and state design remains unverified. | Medium | P1 feature state and interaction work | 2026-09-02 |
+| Structured Output | Provisional L2 | L3 | CORE-SUPPORT | P1 reinforced prompt constraint vs schema/constrained output, schema drift, and retry / repair / fallback. Local Zod validation behavior was verified, but real Provider Structured Output, independent schema authoring, and Provider response handling remain unverified. | Medium | Deferred real Provider Structured Output lab, then P1 schema implementation | 2026-09-02 |
 | Tool Calling | Confirmed L1 | L3 | CORE-SUPPORT | Understands tool/API, read/write, approval and permission boundary; real calls/schema unverified. | Medium | P1/P2 practical tool use | 2026-08-27 |
 | Skill Design | Not Yet Assessed | L3-L4 | CORE-SUPPORT | Deferred outside Phase 0 scope | Baseline Unknown | P3 first required practice | — |
 | Agent Design | Not Yet Assessed | L3-L4 | CORE-SUPPORT | Deferred outside Phase 0 scope | Baseline Unknown | P2 basic agent loop | — |
-| Testing / Code Review | Not Assessed | L3-L4 | CORE-SUPPORT | Partial testing judgment; no test authoring, diff review or independent debugging evidence. | Low | P1 testing and diff review | 2026-08-27 |
+| Testing / Code Review | Not Assessed | L3-L4 | CORE-SUPPORT | P1 failure injection and runtime verification cover delayed responses, HTTP 500, stale response, and schema-invalid payload paths. Systematic test authoring, diff review, and independent debugging evidence remain limited. | Low | P1 testing and diff review | 2026-09-02 |
 | Integration Engineering | Not Yet Assessed | L3 | CORE-SUPPORT | Deferred outside Phase 0 scope | Baseline Unknown | P4 first required practice | — |
 | Reliability Engineering | Not Yet Assessed | L3 | CORE-SUPPORT | Deferred outside Phase 0 scope | Baseline Unknown | P5 first required practice | — |
 | Harness | Not Yet Assessed | L2-L3 | CORE-SUPPORT | Deferred outside Phase 0 scope | Baseline Unknown | P3 application-level introduction | — |
@@ -38,10 +38,10 @@ Phase 0 只主测以下范围：Web / Frontend boundary、JavaScript / TypeScrip
 
 | Ability | Current Status | Target Level | Priority | Evidence | Confidence | Next Verification | Last Verified |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| JavaScript | Not Assessed | L3 | SUPPORT | Missing practical evidence; not an assessment failure. | Low | P1 practical foundation | 2026-08-27 |
-| Next.js | Not Assessed | L3 | SUPPORT | Missing implementation evidence. | Low | P1 practical foundation | 2026-08-27 |
-| HTTP / API | Confirmed L1 | L3 | SUPPORT | General API boundary plus local POST, HTTP 200 and 500 observed; design/auth unverified. | Medium | P1 practical API use | 2026-08-27 |
-| Async Programming | Confirmed L1 | L3 | SUPPORT | Request-response and loading/failure lifecycle verified; timeout/cancellation design only, not implemented. | Medium | P1 await/timeout/cancellation | 2026-08-27 |
+| JavaScript | Confirmed L1 | L3 | SUPPORT | P1 code reading and running verification across request lifecycle and async labs; broader language foundations and independent implementation remain unverified. | Medium | P1 practical foundation and code modification | 2026-09-02 |
+| Next.js | Confirmed L1 | L3 | SUPPORT | P1 Micro Lab code was read and run to trace Browser / Server behavior; broader Next.js implementation and routing remain unverified. | Medium | P1 feature implementation | 2026-09-02 |
+| HTTP / API | Confirmed L1 | L3 | SUPPORT | P1 Request Trace plus HTTP 200, HTTP 500, and HTTP-success/schema-invalid payload paths were run and verified; API design, auth, and external integration remain unverified. | Medium | P1 practical API use | 2026-09-02 |
+| Async Programming | Provisional L2 | L3 | SUPPORT | P1 Async lab ran delay, HTTP 500, race, cancellation, and stale-response scenarios; a request-ID stale-response repair was run and verified. Broader production async design remains unverified. | Medium | P1 await/timeout/cancellation and failure-path transfer | 2026-09-02 |
 | Git | Confirmed L0 | L3 | SUPPORT | Version-control purpose and isolation understood; operations unverified. | High | P1 Git operations | 2026-08-27 |
 | Backend | Not Yet Assessed | L3 | SUPPORT | Deferred outside Phase 0 scope | Baseline Unknown | P1 Server / Client boundary, then P5 depth | — |
 | Database / Data Modeling | Not Yet Assessed | L3 | SUPPORT | Deferred outside Phase 0 scope | Baseline Unknown | P4 first required practice | — |
@@ -50,7 +50,7 @@ Phase 0 只主测以下范围：Web / Frontend boundary、JavaScript / TypeScrip
 | MCP | Not Yet Assessed | L2-L3 | SUPPORT | Deferred outside Phase 0 scope | Baseline Unknown | P4 first required practice | — |
 | Memory / State | Not Yet Assessed | L3 | SUPPORT | Deferred outside Phase 0 scope | Baseline Unknown | P3 basics, then P4 persistent state | — |
 | Security | Not Yet Assessed | L3 | SUPPORT | Deferred outside Phase 0 scope | Baseline Unknown | P5 first required practice | — |
-| Model Literacy | Confirmed L1 | L2-L3 | SUPPORT | Fresh facts, uncertainty and model limits understood; sampling/tokens/context unverified. | Medium | P1 model-feature review | 2026-08-27 |
+| Model Literacy | Confirmed L1 | L2-L3 | SUPPORT | P1 concepts include Model API / SDK roles, instructions/input, Token and Context Window basics, and schema validity versus semantic correctness. Real Provider API use remains unverified. | Medium | Deferred real Provider Model API lab | 2026-09-02 |
 | Python | Not Yet Assessed | L2-L3 | SUPPORT | Deferred outside Phase 0 scope | Baseline Unknown | First real project need | — |
 | Deployment | Not Yet Assessed | L2-L3 | SUPPORT | Deferred outside Phase 0 scope | Baseline Unknown | P5 deployment practice | — |
 
