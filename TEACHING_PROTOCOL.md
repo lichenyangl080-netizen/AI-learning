@@ -262,10 +262,9 @@ Maintain the following balance:
 - Prefer fewer, higher-information-density experiments over repetitive coding exercises.
 - Real implementation evidence remains required where the Curriculum and Phase Exit Gate require it.
 - Conceptual understanding alone does not establish implementation mastery.
-- Codex implementation alone does not establish learner mastery.
+- Evidence and ownership boundaries are defined in `Codex Completion Is Not Mastery` and `Realistic AI-native Coding` below.
 - Framework/API syntax should normally be introduced after its underlying responsibility or problem is understood.
-- Task-local First-pass remains allowed, but it should diagnose the mental model immediately relevant to the current task.
-- First-pass must not become repeated broad reassessment.
+- Task-local First-pass follows `No Phase-entry Reassessment After P0` below.
 - Scenario reasoning should be used to expose understanding gaps, not to create unnecessary exam-style questioning.
 - When the learner already demonstrates a reliable mental model, do not repeat introductory explanation merely to preserve a fixed lesson format.
 - When real runtime behavior contradicts the learner's mental model, prefer investigating the contradiction rather than immediately supplying the answer.
@@ -284,41 +283,9 @@ Meaningful learning progress may occur when:
 
 Cognitive feedback does not replace implementation evidence. It helps build the model that later implementation and debugging will verify.
 
-## P1 Application
+## Phase-specific Application
 
-For P1 — AI Product Technical Literacy / Engineering Literacy Foundation, this learning method should normally favor a progression similar to:
-
-```text
-Browser / Client / Server / Request lifecycle
-↓
-JavaScript / Async / error model
-↓
-React state / rendering / interaction
-↓
-TypeScript / data contracts / runtime validation
-↓
-Model API / Structured Output / Streaming
-↓
-AI UI state / failure / retry / cancellation / concurrency
-↓
-Tool boundary / deterministic computation
-↓
-Integrated AI-native Web Feature
-```
-
-This is an execution preference, not a replacement for the official P1 Curriculum. The exact P1 Execution Plan must still be produced through the existing Phase-start Research and Planning process using current Curriculum, current Ability Matrix, completed P0 evidence, current external research, and current project needs. Phase-start Research & Planning may refine the order when justified.
-
-P1 should therefore not become either a traditional JS → TS → React → Next.js textbook sequence or a purely reactive project workflow where every concept is learned only because a local implementation broke.
-
-The intended pattern is:
-
-```text
-understand the system
-→ challenge the model
-→ verify with a small real experiment
-→ consolidate foundations
-→ integrate into the training product
-```
+Phase-specific sequences belong in `PHASE_EXECUTION_PLAN.md`; this protocol retains only reusable teaching rules.
 
 ## AI and Tool Use
 
@@ -356,7 +323,7 @@ The Phase-start process must:
 1. Read the current repository state, including `CURRENT_STATE.md`, `ABILITY_MATRIX.md`, `REVIEW_QUEUE.md` when relevant, the relevant `CURRICULUM.md` section, and prior-phase evidence when needed.
 2. Research current external information relevant to the Phase. Prefer authoritative and up-to-date sources: official documentation, primary technical sources, current engineering practices, high-quality recent open-source implementations, and recent product or job-market evidence when it materially helps planning.
 3. Compare Curriculum targets, current learner evidence, current technology/practice, and current project needs.
-4. Produce a Phase Execution Plan before formal teaching begins.
+4. Produce and record the Phase Execution Plan in `PHASE_EXECUTION_PLAN.md` before formal teaching begins.
 
 The Phase Execution Plan should cover, when relevant:
 
@@ -400,13 +367,26 @@ A new formal reassessment is allowed only when:
 1. the learner explicitly requests reassessment; or
 2. repository state explicitly marks an assessment as active.
 
-P1 startup therefore means: select/confirm the P1 training product → begin formal P1 learning. It does not mean “start a P1 capability assessment”.
+A post-P0 Phase startup means: research → Phase Execution Plan → learner confirmation → formal learning. It does not mean “start a broad capability assessment”.
 
 ## Hard Rules
 
 ### Phase Exit Gate
 
 不能因为学习时间、课程数量或项目完成进入下一 Phase。必须根据该 Phase 的 `Evidence Required` 与 `Exit Gate` 判断。
+
+#### External Evidence Deferred Exception
+
+Only an external-access block may permit entry to the next Phase before the prior Phase is formally `PASSED`. All conditions must hold:
+
+- all locally completable learning and required local evidence are complete;
+- remaining evidence is blocked only by external resources or access;
+- the missing evidence is not a blocking prerequisite for the next Phase;
+- the prior Phase remains explicitly `NOT PASSED` / evidence deferred;
+- the missing evidence remains in `REVIEW_QUEUE.md`; and
+- it must be completed when access becomes available.
+
+This narrow exception does not weaken the general Phase Exit Gate.
 
 ### Non-goals Protection
 
@@ -430,10 +410,9 @@ Current Project Need
 
 Hard Rules 不可改变：
 
-- GitHub 状态优先；
+- Repository-state priority (see New Conversation Startup Order);
 - AI / 搜索 / Codex 属于默认真实工程环境；
-- Codex 完成不等于掌握；
-- 能力升级必须有证据；
+- Evidence / ownership requirements (see `Codex Completion Is Not Mastery` and `Realistic AI-native Coding`);
 - Spiral Deepening；
 - Phase Exit Gate；
 - Framework 不是课程目标；

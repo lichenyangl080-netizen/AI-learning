@@ -2,18 +2,9 @@
 
 跨对话的 AI-native Product Builder 课程、能力证据、项目状态与审计事实源。
 
-## Current Baseline
+## Current State
 
-- Curriculum Version: v1.2
-- Assessment Spec Version: v1.0.1
-- Lifecycle Position: `P1 in progress`
-- Current Phase: `P1 — AI Product Technical Literacy / Engineering Literacy Foundation`
-- Formal Learning Started: `YES`
-- Formal Assessment Active: `NO`
-- Phase 0 Assessment Completed: `YES`
-- Completed Assessment Run: `ASSESSMENT_RUN_001`
-
-This is an entry summary only. [CURRENT_STATE.md](CURRENT_STATE.md) remains the single source of truth for the current learning lifecycle and next action.
+See [CURRENT_STATE.md](CURRENT_STATE.md) for the authoritative current learning state. See [PHASE_EXECUTION_PLAN.md](PHASE_EXECUTION_PLAN.md) for the current Phase execution plan.
 
 ## Core Files
 
@@ -22,7 +13,8 @@ This is an entry summary only. [CURRENT_STATE.md](CURRENT_STATE.md) remains the 
 - [ASSESSMENT_SPEC.md](ASSESSMENT_SPEC.md)：P0 证据如何收集。
 - [STATE_PROTOCOL.md](STATE_PROTOCOL.md)：跨对话状态如何维护。
 - [AUDIT_POLICY.md](AUDIT_POLICY.md)：何时允许课程路线变化。
-- [CURRENT_STATE.md](CURRENT_STATE.md)：唯一当前状态与下一步。
+- [CURRENT_STATE.md](CURRENT_STATE.md)：唯一当前状态、阻塞与下一步。
+- [PHASE_EXECUTION_PLAN.md](PHASE_EXECUTION_PLAN.md)：当前 Phase 的具体执行计划。
 - [ABILITY_MATRIX.md](ABILITY_MATRIX.md)：证据、目标深度、优先级与待验证缺口。
 - [REVIEW_QUEUE.md](REVIEW_QUEUE.md)、[PROJECT_STATE.md](PROJECT_STATE.md)、[LEARNING_LOG.md](LEARNING_LOG.md)、[CHANGELOG.md](CHANGELOG.md)：复习、项目、历史与版本记录。
 

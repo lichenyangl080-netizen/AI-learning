@@ -2,20 +2,21 @@
 
 ## State File Responsibilities
 
-- `CURRENT_STATE.md`: current learning lifecycle position, active phase, and next action.
+- `CURRENT_STATE.md`: current learning lifecycle position, active phase, blockers, and next action; not a detailed execution plan or learning history.
 - `ABILITY_MATRIX.md`: current effective capability status, evidence boundary, confidence, targets, priorities, and verification gaps; not a project checklist.
 - `ASSESSMENT_SPEC.md`: the operating specification for Phase 0 evidence gathering.
 - `ASSESSMENT_RUN_*.md`: historical assessment-evidence snapshots.
 - `LEARNING_LOG.md`: historical learning events.
 - `PROJECT_STATE.md`: project delivery state, separate from learning state.
-- `CURRICULUM.md`: target capabilities and route.
+- `CURRICULUM.md`: long-term target capabilities and Phase structure.
+- `PHASE_EXECUTION_PLAN.md`: current Phase's concrete execution plan; historical versions remain in Git history.
 - `TEACHING_PROTOCOL.md`: teaching behavior.
 - `REVIEW_QUEUE.md`: re-verification and review needs.
 - `CHANGELOG.md`: versions of course and operating specifications.
 
 ## Single Source of Truth
 
-`CURRENT_STATE.md` determines the current lifecycle state. `ABILITY_MATRIX.md` determines the current capability conclusion. `ASSESSMENT_RUN_*.md` and `LEARNING_LOG.md` are historical evidence: they may explain why a baseline status was assigned, but MUST NOT override, downgrade, or replace later Matrix evidence. If the current Matrix conflicts with an older run record, the newer Matrix is authoritative unless the Matrix or run is explicitly marked corrupted or under reassessment. Project completion never proves mastery. Conflicts otherwise resolve as: current repository state files > committed history > conversation memory > model inference.
+`CURRENT_STATE.md` determines the current lifecycle state. `ABILITY_MATRIX.md` determines the current capability conclusion. `ASSESSMENT_RUN_*.md` and `LEARNING_LOG.md` are historical evidence: they may explain why a baseline status was assigned, but MUST NOT override, downgrade, or replace later Matrix evidence. If the current Matrix conflicts with an older run record, the newer Matrix is authoritative unless the Matrix or run is explicitly marked corrupted or under reassessment. Project completion never proves mastery. `CURRENT_STATE.md` is authoritative for lifecycle state, blockers, and next action; `PHASE_EXECUTION_PLAN.md` is authoritative for the current Phase's execution route; `CURRICULUM.md` is authoritative for long-term structure. Conflicts otherwise resolve as: current repository state files > committed history > conversation memory > model inference.
 
 ## Operating States
 

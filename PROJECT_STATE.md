@@ -1,14 +1,12 @@
 # Project State
 
-## Long-term Training Product
+## Training Product / Task
 
-Status: P1_IN_PROGRESS / INTEGRATION_PRODUCT_NOT_CONFIRMED
+Status: P1_MICRO_LAB_COMPLETE / P2_TASK_NOT_SELECTED
 
-Reason:
+`p1-async-micro-lab` completed its current role as a P1 training and evidence environment. It is not a confirmed long-term product.
 
-P1 formal learning is in progress. `p1-async-micro-lab` is the current P1 Micro Lab / training environment, not a confirmed long-term Integration Product. The long-term P1 Integration Product remains unconfirmed.
-
-Selection preference: primary Product / Capability / Workflow / Context / Tool / Eval learning value + formal Visual / Interaction / AI-native UX secondary-axis space + sufficient supporting engineering literacy coverage.
+P2 training product / task is not yet selected. Select it during P2 Phase-start Research & Planning.
 
 ## Independent Graduation Project
 
