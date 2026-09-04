@@ -3,12 +3,13 @@
 Curriculum Version: v1.2
 Assessment Spec Version: v1.0.1
 
-Lifecycle Position: P1 Local Learning Complete / Exit Gate Provider Evidence Deferred
-Current Phase: P1 — AI Product Technical Literacy / Engineering Literacy Foundation
-Current Learning Position: P1 local closure; P2 Phase-start Planning pending
-Module: P1 formal Exit Gate Provider Evidence Deferred; P2 planning not yet confirmed
-Status: P1 LOCAL LEARNING COMPLETE / EXIT GATE PROVIDER EVIDENCE DEFERRED
+Lifecycle Position: P2 Phase-start Planning / P1 Exit Gate Provider Evidence Deferred
+Current Phase: P2 — Workflow + Tool + AI-native Interaction
+Current Learning Position: P2 Phase-start Planning / Not Yet Confirmed
+Module: P2 Phase-start Research & Planning
+Status: P2 PLANNING / NOT YET CONFIRMED; P1 EXIT GATE PROVIDER EVIDENCE DEFERRED
 
+Open Prior-Phase Exit Evidence: P1 — Provider Evidence Deferred
 Formal Learning Started: YES
 Formal Assessment Active: NO
 Phase 0 Assessment Completed: YES
@@ -18,15 +19,17 @@ Baseline Reference: ASSESSMENT_RUN_001.md — read when evidence-boundary clarif
 
 ## Current Focus
 
-P1 local learning is complete. P1 is not formally `PASSED`: the formal Exit Gate remains deferred solely for Provider evidence that cannot be completed without Provider API access.
+P2 Phase-start Research & Planning is the current work. P2 formal learning has not started and its Execution Plan remains `PLANNING / NOT YET CONFIRMED`.
 
-## Open P1 Provider Evidence
+## Open Prior-Phase Exit Evidence
+
+P1 remains not formally `PASSED`; its formal Exit Gate is deferred solely for Provider evidence unavailable without Provider API access.
 
 - Real Provider Model API call and Provider API Key / Secret handling
 - Real Provider Structured Output with runtime validation and a failure path
 - Real `UI → Server → Provider → Model Output → Validation → UI` end-to-end integration
 - Real Provider Tool Calling remains deferred verification evidence for P1/P2 unless required by the actual integration; it is not a standalone P1 Exit Gate requirement.
 
-P2 Phase-start Research & Planning may proceed under the External Evidence Deferred Exception. P2 formal learning has not started.
+P2 Phase-start Research & Planning may proceed under the External Evidence Deferred Exception.
 
 Next Action: Run P2 Phase-start Research & Planning and produce the P2 Execution Plan for learner confirmation.

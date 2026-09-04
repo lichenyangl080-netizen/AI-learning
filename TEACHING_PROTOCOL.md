@@ -13,11 +13,13 @@ ABILITY_MATRIX.md
 ↓
 REVIEW_QUEUE.md（如存在）
 ↓
-CURRICULUM.md 的当前相关部分
+CURRICULUM.md 的当前相关 Phase
+↓
+PHASE_EXECUTION_PLAN.md
 ↓
 TEACHING_PROTOCOL.md
 ↓
-开始本次学习
+开始本次学习 / planning
 ```
 ## Conditional Phase 0 Assessment Loading
 
@@ -40,6 +42,8 @@ Active assessment run state, if one exists
 ```
 
 Do not create an assessment run file until formal assessment explicitly starts.
+
+`PHASE_EXECUTION_PLAN.md` remains the current Phase execution-route source; it does not replace P0 assessment evidence and is read during P0 assessment only when it explicitly corresponds to the P0 work being planned.
 
 
 禁止只根据聊天记忆、上一段对话印象或模型推测决定教学内容。若聊天记忆与仓库状态冲突，仓库中的状态文件优先。

@@ -20,7 +20,7 @@ See [CURRENT_STATE.md](CURRENT_STATE.md) for the authoritative current learning 
 
 ## Startup Order
 
-日常恢复：`CURRENT_STATE.md → ABILITY_MATRIX.md → REVIEW_QUEUE.md → relevant CURRICULUM.md → TEACHING_PROTOCOL.md`。
+日常恢复：`CURRENT_STATE.md → ABILITY_MATRIX.md → REVIEW_QUEUE.md → relevant current Phase of CURRICULUM.md → PHASE_EXECUTION_PLAN.md → TEACHING_PROTOCOL.md → begin current learning / planning`。
 
 P0 assessment planning, start, or resume additionally requires `ASSESSMENT_SPEC.md` after `TEACHING_PROTOCOL.md`; an active run state is read afterward only if it exists. Repository state takes precedence over committed history, conversation memory, and model inference.
 
