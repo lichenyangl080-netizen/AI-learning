@@ -6,7 +6,7 @@ Assessment Spec Version: v1.0.1
 Lifecycle Position: P1 In Progress
 Current Phase: P1 — AI Product Technical Literacy / Engineering Literacy Foundation
 Current Learning Position: Formal P1 Learning
-Module: P1 — Chapter 5 concepts complete; Provider labs deferred
+Module: P1 — Chapter 9 complete; Provider integration labs deferred
 Status: P1 IN PROGRESS
 
 Formal Learning Started: YES
@@ -18,7 +18,9 @@ Baseline Reference: ASSESSMENT_RUN_001.md — read when P1 startup or evidence-b
 
 ## Current Focus
 
-P1 formal learning is in progress as the AI Product Technical Literacy / Engineering Literacy Foundation. Completed evidence remains: Web request lifecycle; JavaScript async/error/timeout/cancellation/race behavior; React request-to-state-to-render interaction; TypeScript/Zod runtime validation; and Model API / Structured Output concepts. `p1-async-micro-lab` remains the current P1 Micro Lab. Real Provider Model API and Provider Structured Output calls are deferred until a provider API key is available; they remain required before the P1 Exit Gate but do not block the next P1 module.
+P1 formal learning is in progress as the AI Product Technical Literacy / Engineering Literacy Foundation. Completed evidence includes: Web request lifecycle; JavaScript async/error/timeout/cancellation/race behavior; React request-to-state-to-render interaction; TypeScript/Zod runtime validation; Model API / Structured Output concepts; Streaming / AI UI State; Tool Calling basics; and Basic Testing / Eval / Verification conceptual coverage with one Codex-assisted mutation-testing demonstration. `p1-async-micro-lab` remains the current P1 Micro Lab.
+
+The standalone Integrated Feature chapter/practice was compressed because it primarily combined mechanisms already learned; it does not create independent integration-practice evidence or waive the real Provider end-to-end integration required before the P1 Exit Gate. Real Provider Model API, Structured Output, Tool Calling, and end-to-end integration remain deferred until Provider API access is available. Codex-assisted demonstration is not independent learner mastery.
 
 ## P1 Minimum Learning Density
 
@@ -26,4 +28,4 @@ High density: Browser / Client / Server responsibility, AI UI state / Streaming,
 
 Minimum Learning Density is a calibration overlay, not a replacement for the full P1 Core Capabilities in `CURRICULUM.md`. High density identifies current product and verification priorities; supporting literacy identifies the minimum technical depth required for ownership. Unmentioned P1 capabilities are not automatically skipped and enter when the P1 feature requires them.
 
-Next Action: Continue the next P1 module with supporting engineering literacy focused on product ownership and runtime verification. Before the P1 Exit Gate, complete the deferred real Provider Model API and Structured Output labs when a provider API key is available.
+Next Action: Continue the next P1 module after Chapter 9 with supporting engineering literacy focused on product ownership and runtime verification. Before the P1 Exit Gate, complete the deferred real Provider Model API, Structured Output, Tool Calling, and end-to-end integration evidence when Provider API access is available.

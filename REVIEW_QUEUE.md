@@ -27,8 +27,12 @@ No scheduled calendar review items yet.
 - Real Structured Output provider call — deferred until a provider API key is available; required before P1 Exit Gate
 - Provider API authentication / API Key handling — verify with a real Provider call; do not store credentials in this repository
 - Model Output → Validation → UI end-to-end evidence — verify after the real Provider path is available
+- Real Provider Tool Calling runtime evidence — deferred until Provider API access is available
+- Real Provider end-to-end integration — deferred until Provider API access is available
 
 REVIEW_QUEUE only records review and re-verification needs; formal learning state is determined by CURRENT_STATE.md.
+
+P1 Exit Gate requirements remain defined by `CURRICULUM.md`; these deferred items do not independently add an Exit Gate requirement.
 
 Verification candidates do not override current `ABILITY_MATRIX.md` status; they only mark natural future re-verification opportunities.
 

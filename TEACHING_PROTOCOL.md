@@ -88,6 +88,24 @@ Eval / Verify
 
 保持 `Chapter → Lesson → Section` 结构，避免切成大量孤立术语小节；一个 Section 应尽量解决一个完整问题。新内容可先用不预设答案的机制题探测当前任务相关的认知模型。若学习者已能正确解释核心机制，只补必要的专业术语和边界后直接推进；不得重复测试 P0 已有充分证据的能力。学习目标是能判断、能审查 Codex、能验证真实行为，而非为手写代码而手写。
 
+## Deduplication and Section Skip Gate
+
+### A. 已掌握内容去重
+
+已有学习证据或当前回答已清楚说明的机制，不得再作为新知识完整展开。相关时仅用 1–2 句连接旧 mental model、补新的边界 / 术语 / 场景；只有遗忘、错误理解、错误迁移或新场景暴露真实缺口时才重讲。长期去重集合包括：local / partial success ≠ overall success；build / typecheck / lint pass ≠ runtime behavior verified；stale response / stale generation、error classification、retry / idempotency、Schema-valid ≠ semantically correct、external input is untrusted、loading / progress / retry / stop 基础 AI UX、normal / failure / edge-case 测试直觉，以及 deterministic logic 更适合 code 而非 LLM。
+
+### B. Section Skip Gate
+
+每个可跳过的理论小节前，先用 1–3 个简短诊断问题判断学习者是否已通过既有课程、项目、AI 使用、产品经验或过去思考理解其核心机制。它只决定完整教学、补缺口或直接跳过：能正确解释则只补术语、边界或新知识后推进；只理解一部分则只补缺口；明显不会才正常展开。不得成为 broad reassessment，也不得因新 Chapter / Lesson 重测已有充分证据的整片能力。
+
+### C. 诊断与实践边界
+
+诊断必须发生在该内容正式讲解之前；已给出答案后不得把相同问题的回答伪装成 prior evidence。为产生 required evidence 的实践（runtime verification、Provider integration、Tool execution、failure injection、Eval、diff review、debugging）直接开始，实践中的预测、判断、解释与复盘自然形成 evidence。
+
+### D. 术语与责任重点
+
+新英文术语首次出现时立即给出简短中文含义，不在章节开头堆积术语；已学术语只在明显遗忘时快速回顾。继续以 mechanism / responsibility / system boundary 优先于 syntax：Codex 可承担大量实现，学习者负责 mental model、product / architecture judgment、runtime verification、关键 diff review、failure interpretation 与最终 acceptance judgment，而不是以手写大量代码作为 P1 主要目标。
+
 ## Mental-model-first, Experiment-verified Learning
 
 For conceptually dense engineering topics, especially when the learner does not yet have strong implementation foundations, teaching should normally build a coherent mental model before relying on large project implementation.
