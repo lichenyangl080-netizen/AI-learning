@@ -3,11 +3,11 @@
 Curriculum Version: v1.2
 Assessment Spec Version: v1.0.1
 
-Lifecycle Position: P1 In Progress
+Lifecycle Position: P1 Local Learning Complete / Exit Gate Provider Evidence Deferred
 Current Phase: P1 — AI Product Technical Literacy / Engineering Literacy Foundation
-Current Learning Position: Formal P1 Learning
-Module: P1 — Chapter 9 complete; Provider integration labs deferred
-Status: P1 IN PROGRESS
+Current Learning Position: P1 Local Learning Complete / Exit Gate Provider Evidence Deferred
+Module: P1 — Chapters 10–11 and Consolidation complete; Provider evidence deferred
+Status: P1 LOCAL LEARNING COMPLETE / EXIT GATE PROVIDER EVIDENCE DEFERRED
 
 Formal Learning Started: YES
 Formal Assessment Active: NO
@@ -18,9 +18,11 @@ Baseline Reference: ASSESSMENT_RUN_001.md — read when P1 startup or evidence-b
 
 ## Current Focus
 
-P1 formal learning is in progress as the AI Product Technical Literacy / Engineering Literacy Foundation. Completed evidence includes: Web request lifecycle; JavaScript async/error/timeout/cancellation/race behavior; React request-to-state-to-render interaction; TypeScript/Zod runtime validation; Model API / Structured Output concepts; Streaming / AI UI State; Tool Calling basics; and Basic Testing / Eval / Verification conceptual coverage with one Codex-assisted mutation-testing demonstration. `p1-async-micro-lab` remains the current P1 Micro Lab.
+P1 local learning is complete for the AI Product Technical Literacy / Engineering Literacy Foundation. Completed evidence includes the earlier Web, Async, React, TypeScript/Zod, Model API / Structured Output, Streaming / AI UI State, Tool Calling, and Basic Testing / Eval work; Chapter 10 Cost / Latency / Model-use Decisions; Chapter 11 AI-assisted Engineering Ownership; and P1 Consolidation. `p1-async-micro-lab` remains the P1 Micro Lab.
 
-The standalone Integrated Feature chapter/practice was compressed because it primarily combined mechanisms already learned; it does not create independent integration-practice evidence or waive the real Provider end-to-end integration required before the P1 Exit Gate. Real Provider Model API, Structured Output, Tool Calling, and end-to-end integration remain deferred until Provider API access is available. Codex-assisted demonstration is not independent learner mastery.
+In the Chapter 11 ownership practice, the learner defined expected behavior, reviewed Codex's scoped change explanation, personally verified Delay, HTTP 500, and Race behavior in the webpage, and made the final acceptance judgment. This is targeted runtime-ownership evidence, not independent complex diff-review, Git-operation, React, or TypeScript mastery.
+
+P1 is not formally `PASSED`: Real Provider Model API, Provider API Key / Secret handling, Provider Structured Output, and real `UI → Server → Provider → Model Output → Validation → UI` end-to-end evidence remain deferred until Provider API access is available. Real Provider Tool Calling remains deferred P1/P2 verification evidence unless required by the actual integration.
 
 ## P1 Minimum Learning Density
 
@@ -30,15 +32,15 @@ Minimum Learning Density is a calibration overlay, not a replacement for the ful
 
 ## P1 Remaining Execution Plan
 
-### Chapter 10 — Cost / Latency / Model-use Decisions
+### Chapter 10 — Cost / Latency / Model-use Decisions — Complete
 
 Build product-level cost and latency judgment: Token cost drivers (Input / Output / Reasoning), model choice and quality trade-offs, single versus multiple calls, workflow call accumulation, actual versus perceived latency, Streaming, and basic serial / parallel effects. Do not memorize Provider pricing, pursue traditional performance optimization, or study infrastructure / profiling depth. The required outcome is a reasonable product judgment about where an AI feature's cost and latency arise.
 
-### Chapter 11 — AI-assisted Engineering Ownership
+### Chapter 11 — AI-assisted Engineering Ownership — Complete
 
 Practice responsibility-layer judgment (Client / Server / State / Validation / Provider / Tool Runtime), basic `git status` / `git diff` / commit and previous-version literacy, key diff review, acceptance criteria, runtime and failure-path verification, and final accept / reject judgment. Use `p1-async-micro-lab` for one small real behavior change: decide the responsibility layer and expected behavior first; let Codex implement; review the key diff; run minimal verification; inspect or create one meaningful failure / edge case; then decide acceptance. Do not re-teach the existing Deduplication-set mechanisms in full.
 
-### P1 Consolidation / Exit Gate Readiness
+### P1 Consolidation / Exit Gate Readiness — Complete
 
 After Chapter 11, do not add new default P1 Chapters. Connect the completed P1 mental models, inspect learner evidence versus Codex-assisted evidence, missing evidence, and deferred Provider evidence, and only fill real gaps. This is neither a new theory Chapter nor broad reassessment; if evidence is sufficient, proceed directly to Exit Gate readiness.
 
@@ -57,4 +59,4 @@ If Chapters 10 and 11 plus P1 Consolidation / Exit Gate Readiness are complete b
 
 P1 Exit Gate requirements remain defined by `CURRICULUM.md`; this execution plan adds none.
 
-Next Action: Begin Chapter 10 — Cost / Latency / Model-use Decisions.
+Next Action: Begin P2 — Workflow + Tool + AI-native Interaction.
