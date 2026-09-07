@@ -3,11 +3,11 @@
 Curriculum Version: v1.2
 Assessment Spec Version: v1.0.1
 
-Lifecycle Position: P2 Phase-start Planning / P1 Exit Gate Provider Evidence Deferred
+Lifecycle Position: P2 Exit Gate Readiness / P1 Exit Gate Provider Evidence Deferred
 Current Phase: P2 — Workflow + Tool + AI-native Interaction
-Current Learning Position: P2 Phase-start Planning / Not Yet Confirmed
-Module: P2 Phase-start Research & Planning
-Status: P2 PLANNING / NOT YET CONFIRMED; P1 EXIT GATE PROVIDER EVIDENCE DEFERRED
+Current Learning Position: P2 Exit Gate Readiness / Retry Verification Required
+Module: P2 Pause / Approve / Resume Micro Lab — Retry Verification Pending
+Status: P2 NOT PASSED / RETRY VERIFICATION REQUIRED; P1 EXIT GATE PROVIDER EVIDENCE DEFERRED
 
 Open Prior-Phase Exit Evidence: P1 — Provider Evidence Deferred
 Formal Learning Started: YES
@@ -19,7 +19,9 @@ Baseline Reference: ASSESSMENT_RUN_001.md — read when evidence-boundary clarif
 
 ## Current Focus
 
-P2 Phase-start Research & Planning is the current work. P2 formal learning has not started and its Execution Plan remains `PLANNING / NOT YET CONFIRMED`.
+P2 local learning and the Pause / Approve / Resume Micro Lab are complete through normal approval, reject, and stale-approval invalidation. The learner personally verified the corresponding runtime states and side-effect boundaries.
+
+P2 is not formally `PASSED`: the only current P2 Exit Gate blocker is runtime verification of a retry / recovery transition for a failed or invalidated workflow action. This is a local evidence gap, not a Provider-access deferral.
 
 ## Open Prior-Phase Exit Evidence
 
@@ -30,6 +32,4 @@ P1 remains not formally `PASSED`; its formal Exit Gate is deferred solely for Pr
 - Real `UI → Server → Provider → Model Output → Validation → UI` end-to-end integration
 - Real Provider Tool Calling remains deferred verification evidence for P1/P2 unless required by the actual integration; it is not a standalone P1 Exit Gate requirement.
 
-P2 Phase-start Research & Planning may proceed under the External Evidence Deferred Exception.
-
-Next Action: Run P2 Phase-start Research & Planning and produce the P2 Execution Plan for learner confirmation.
+Next Action: Add and run one retry / recovery transition in the P2 micro lab; verify its user-visible state and side-effect boundary, then reassess the P2 Exit Gate.

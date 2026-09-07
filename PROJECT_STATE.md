@@ -2,11 +2,11 @@
 
 ## Training Product / Task
 
-Status: P1_MICRO_LAB_COMPLETE / P2_TASK_NOT_SELECTED
+Status: P1_MICRO_LAB_COMPLETE / P2_APPROVAL_MICRO_LAB_EXIT_PENDING
 
-`p1-async-micro-lab` completed its current role as a P1 training and evidence environment. It is not a confirmed long-term product.
+`p1-async-micro-lab` completed its P1 role and was reused for the P2 local Pause / Approve / Resume evidence environment. It is not a confirmed long-term product.
 
-P2 training product / task is not yet selected. Select it during P2 Phase-start Research & Planning.
+P2 retry / recovery verification remains before the current micro lab can close. A P3 training product / task is not yet selected.
 
 ## Independent Graduation Project
 

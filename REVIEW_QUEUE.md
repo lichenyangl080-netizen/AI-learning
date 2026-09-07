@@ -1,6 +1,6 @@
 # Review Queue
 
-P1 local learning is complete. P1 formal Exit Gate remains open because Provider evidence is deferred; P2 Phase-start Planning may proceed under the External Evidence Deferred Exception.
+P1 local learning is complete. P1 formal Exit Gate remains open because Provider evidence is deferred. P2 is at Exit Gate readiness with one local retry / recovery verification blocker.
 
 No scheduled calendar review items yet.
 
@@ -20,6 +20,10 @@ No scheduled calendar review items yet.
 - RAG versus authoritative API boundary — natural project review
 - Model uncertainty — natural project review
 - Structured Output — deferred Provider Lab A when Provider API access is available
+
+## P2 Exit Gate Verification
+
+- Retry / recovery transition after a failed or invalidated action — user-visible state and side-effect boundary runtime verification required before P2 can be marked PASSED
 
 ## P1 Deferred Provider Evidence
 

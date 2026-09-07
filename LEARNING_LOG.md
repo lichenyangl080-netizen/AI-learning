@@ -47,3 +47,11 @@
 - Completed P1 Consolidation: connected Client / UI State → HTTP / Async → Streaming → Race / stale generation → Runtime Validation → Retry / Repair / Fallback / Error, including stale-event suppression and schema-invalid output handling.
 - Current state: `P1 Local Learning Complete / Exit Gate Provider Evidence Deferred`; P1 is not formally passed. Provider Model API, API Key / Secret handling, Structured Output, and real end-to-end integration evidence remain deferred; Provider Tool Calling remains verification evidence unless the integration needs it.
 - Next: Begin P2 — Workflow + Tool + AI-native Interaction.
+
+## P2 Checkpoint — 2026-09-07
+
+- Section Skip Gate reused P1 foundations; teaching moved quickly from concept prompts to public GitHub Copilot Coding Agent / Code Review cases.
+- Consolidated workflow / agent control allocation, capability versus permission / approval, runtime-enforced boundaries, and tool-interface effects on context acquisition and behavior.
+- In the local deterministic Pause / Approve / Resume micro lab, the learner personally verified: normal approval → revalidation → execution; reject → no execution; and stale approval after external state change → invalidated with no execution.
+- Evidence boundary: no real LLM, Provider API, Provider Agent Runtime, or Provider Tool Calling was used. Codex implementation is not treated as learner mastery.
+- P2 local learning is complete but P2 is not formally passed: retry / recovery transition runtime verification remains the single Exit Gate blocker. P1 Provider evidence remains deferred.

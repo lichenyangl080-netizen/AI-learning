@@ -1,11 +1,14 @@
 # Phase Execution Plan
 
 Phase: P2 — Workflow + Tool + AI-native Interaction
-Status: PLANNING / NOT YET CONFIRMED
+Status: EXIT GATE READINESS / RETRY VERIFICATION REQUIRED
 Purpose: Single source of truth for the current Phase's concrete execution plan.
 
-This file does not replace `CURRICULUM.md`, record capability conclusions, or store learning history. Git history preserves prior Phase plan versions.
+Executed: capability-allocation and control-boundary reasoning; public GitHub Copilot Coding Agent / Code Review case analysis; and a local deterministic Pause / Approve / Resume micro lab. The learner personally verified normal approval, reject, and stale-approval invalidation.
 
-Next Action: Perform P2 Phase-start Research & Planning, then populate and present this plan for learner confirmation.
+Current Position: P2 local learning is complete, but P2 is not formally `PASSED`.
+Only Exit Gate Blocker: runtime verification of one retry / recovery transition after a failed or invalidated action, including user-visible state and side-effect boundary.
 
-After research and confirmation, record: Phase Objective; Learning Delta; Module / Chapter Sequence; Required Practice; Evidence Targets; Training Product / Task; Verification / Eval; Triggered Topics; Non-goals; and Current Position.
+Evidence Boundary: the micro lab is a local deterministic runtime, not a real LLM, Provider API, Provider Agent Runtime, or Provider Tool Calling implementation. P1 Provider evidence remains separately deferred.
+
+Next Action: Complete the retry / recovery verification, reassess the P2 Exit Gate, then archive P2 and begin P3 Phase-start Research & Planning if passed.
