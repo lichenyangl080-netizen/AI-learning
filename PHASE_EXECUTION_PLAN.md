@@ -1,14 +1,14 @@
 # Phase Execution Plan
 
-Phase: P2 — Workflow + Tool + AI-native Interaction
-Status: EXIT GATE READINESS / RETRY VERIFICATION REQUIRED
+Phase: P3 — Context & Capability Engineering
+Status: PHASE-START PLANNING / NOT YET CONFIRMED
 Purpose: Single source of truth for the current Phase's concrete execution plan.
 
-Executed: capability-allocation and control-boundary reasoning; public GitHub Copilot Coding Agent / Code Review case analysis; and a local deterministic Pause / Approve / Resume micro lab. The learner personally verified normal approval, reject, and stale-approval invalidation.
+Previous Phase: P2 — Workflow + Tool + AI-native Interaction — `PASSED` after capability-allocation and control-boundary reasoning; public GitHub Copilot Coding Agent / Code Review case analysis; and learner verification of normal approval, reject, stale invalidation, Tool failure, successful retry / recovery, and retry invalidation after external state change in the local deterministic Pause / Approve / Resume micro lab.
 
-Current Position: P2 local learning is complete, but P2 is not formally `PASSED`.
-Only Exit Gate Blocker: runtime verification of one retry / recovery transition after a failed or invalidated action, including user-visible state and side-effect boundary.
+Current Position: P3 Phase-start Research & Planning / Not Yet Confirmed. P3 formal learning has not started.
 
-Evidence Boundary: the micro lab is a local deterministic runtime, not a real LLM, Provider API, Provider Agent Runtime, or Provider Tool Calling implementation. P1 Provider evidence remains separately deferred.
 
-Next Action: Complete the retry / recovery verification, reassess the P2 Exit Gate, then archive P2 and begin P3 Phase-start Research & Planning if passed.
+Evidence Boundary: the P2 micro lab was a local deterministic runtime, not a real LLM, Provider API, Provider Agent Runtime, or Provider Tool Calling implementation. P1 Provider evidence remains separately deferred.
+
+Next Action: Perform P3 Phase-start Research & Planning and produce a P3 Execution Plan for learner confirmation.

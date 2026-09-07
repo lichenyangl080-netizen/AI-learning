@@ -55,3 +55,10 @@
 - In the local deterministic Pause / Approve / Resume micro lab, the learner personally verified: normal approval → revalidation → execution; reject → no execution; and stale approval after external state change → invalidated with no execution.
 - Evidence boundary: no real LLM, Provider API, Provider Agent Runtime, or Provider Tool Calling was used. Codex implementation is not treated as learner mastery.
 - P2 local learning is complete but P2 is not formally passed: retry / recovery transition runtime verification remains the single Exit Gate blocker. P1 Provider evidence remains deferred.
+
+## P2 Exit Gate Archive — 2026-09-07
+
+- P2 practice used Section Skip Gate compression, public GitHub Copilot Coding Agent / Code Review cases, capability / permission / approval / runtime-boundary reasoning, and the local Pause / Approve / Resume micro lab.
+- The learner personally verified A/B/C plus D1 successful retry recovery and D2 retry invalidation after external state change, including revalidation, user-visible state, and side-effect boundaries.
+- P2 Exit Gate: `PASSED`. Evidence remains a local deterministic runtime; no real LLM, Provider API, Provider Agent Runtime, or Provider Tool Calling was used. P1 Provider evidence remains deferred.
+- Next: P3 Phase-start Research & Planning; P3 formal learning has not started.

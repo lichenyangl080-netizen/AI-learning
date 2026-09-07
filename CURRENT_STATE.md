@@ -3,11 +3,11 @@
 Curriculum Version: v1.2
 Assessment Spec Version: v1.0.1
 
-Lifecycle Position: P2 Exit Gate Readiness / P1 Exit Gate Provider Evidence Deferred
-Current Phase: P2 — Workflow + Tool + AI-native Interaction
-Current Learning Position: P2 Exit Gate Readiness / Retry Verification Required
-Module: P2 Pause / Approve / Resume Micro Lab — Retry Verification Pending
-Status: P2 NOT PASSED / RETRY VERIFICATION REQUIRED; P1 EXIT GATE PROVIDER EVIDENCE DEFERRED
+Lifecycle Position: P3 Phase-start Planning / P1 Exit Gate Provider Evidence Deferred
+Current Phase: P3 — Context & Capability Engineering
+Current Learning Position: P3 Phase-start Research & Planning / Not Yet Confirmed
+Module: P3 Phase-start Research & Planning
+Status: P2 PASSED; P3 PLANNING / NOT YET CONFIRMED; P1 EXIT GATE PROVIDER EVIDENCE DEFERRED
 
 Open Prior-Phase Exit Evidence: P1 — Provider Evidence Deferred
 Formal Learning Started: YES
@@ -19,9 +19,9 @@ Baseline Reference: ASSESSMENT_RUN_001.md — read when evidence-boundary clarif
 
 ## Current Focus
 
-P2 local learning and the Pause / Approve / Resume Micro Lab are complete through normal approval, reject, and stale-approval invalidation. The learner personally verified the corresponding runtime states and side-effect boundaries.
+P2 is complete and its Exit Gate is `PASSED`. The learner personally verified normal approval, reject, stale-approval invalidation, Tool failure, successful retry / recovery, and retry invalidation after external state change in the local deterministic Pause / Approve / Resume Micro Lab, including user-visible states and side-effect boundaries.
 
-P2 is not formally `PASSED`: the only current P2 Exit Gate blocker is runtime verification of a retry / recovery transition for a failed or invalidated workflow action. This is a local evidence gap, not a Provider-access deferral.
+P3 has not formally started. It must first go through Phase-start Research & Planning, a P3 Execution Plan, learner confirmation, and then formal P3 learning.
 
 ## Open Prior-Phase Exit Evidence
 
@@ -32,4 +32,4 @@ P1 remains not formally `PASSED`; its formal Exit Gate is deferred solely for Pr
 - Real `UI → Server → Provider → Model Output → Validation → UI` end-to-end integration
 - Real Provider Tool Calling remains deferred verification evidence for P1/P2 unless required by the actual integration; it is not a standalone P1 Exit Gate requirement.
 
-Next Action: Add and run one retry / recovery transition in the P2 micro lab; verify its user-visible state and side-effect boundary, then reassess the P2 Exit Gate.
+Next Action: Perform P3 Phase-start Research & Planning, update `PHASE_EXECUTION_PLAN.md`, and present the P3 plan for learner confirmation before formal P3 learning.
