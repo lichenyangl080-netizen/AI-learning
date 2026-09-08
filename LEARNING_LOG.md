@@ -62,3 +62,10 @@
 - The learner personally verified A/B/C plus D1 successful retry recovery and D2 retry invalidation after external state change, including revalidation, user-visible state, and side-effect boundaries.
 - P2 Exit Gate: `PASSED`. Evidence remains a local deterministic runtime; no real LLM, Provider API, Provider Agent Runtime, or Provider Tool Calling was used. P1 Provider evidence remains deferred.
 - Next: P3 Phase-start Research & Planning; P3 formal learning has not started.
+
+## P3 Core Instruction Checkpoint — 2026-09-08
+
+- Completed the P3 core instruction on Context, Tool Design, Skill Engineering, Memory / State, Harness Engineering, Capability Eval, and their integrated capability boundaries; prior foundations were not re-taught.
+- The learner can distinguish context selection from repository-held information, tool surface from capability, reusable Skill behavior from one-off prompts, runtime State from Memory and History, Harness feedback from Tool / Skill responsibilities, and Code / LLM Judge / Human evaluation roles.
+- Current Skill / Capability optimization practice remains in progress and is not completion evidence. P3 remains not passed pending practical Exit-Gate validation; no Product Design or image-to-code plugin work is recorded as completed.
+- Next learning focus: P4 Phase-start Research & Planning without re-diagnosing completed P3 concepts; P4 formal learning has not started.

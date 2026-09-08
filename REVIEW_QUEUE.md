@@ -1,6 +1,6 @@
 # Review Queue
 
-P1 local learning is complete. P1 formal Exit Gate remains open because Provider evidence is deferred. P2 Exit Gate is PASSED; P3 Phase-start Research & Planning is next.
+P1 local learning is complete. P1 formal Exit Gate remains open because Provider evidence is deferred.
 
 No scheduled calendar review items yet.
 
@@ -21,9 +21,9 @@ No scheduled calendar review items yet.
 - Model uncertainty — natural project review
 - Structured Output — deferred Provider Lab A when Provider API access is available
 
-## P2 Exit Gate Verification (Completed)
+## P3 Practical / Exit-Gate Verification
 
-- Retry / recovery transition after a failed or invalidated action — learner-verified through successful retry and retry invalidation after external state change; P2 Exit Gate PASSED
+- Skill / Capability optimization practice — in progress; do not record Product Design or image-to-code plugin work as completed evidence until practical validation is complete.
 
 ## P1 Deferred Provider Evidence
 
