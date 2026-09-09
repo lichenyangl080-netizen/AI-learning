@@ -23,7 +23,7 @@ Current Position: P6 Phase-start Research & Planning / Not Yet Confirmed
 
 ## Startup Order
 
-日常恢复：`CURRENT_STATE.md → relevant ABILITY_MATRIX rows → REVIEW_QUEUE.md → relevant current Phase of CURRICULUM.md → PHASE_EXECUTION_PLAN.md → TEACHING_PROTOCOL.md → begin current learning / planning`。
+日常恢复：`CURRENT_STATE.md → relevant ABILITY_MATRIX rows → REVIEW_QUEUE.md → CURRICULUM global route + relevant current Phase → PHASE_EXECUTION_PLAN.md → TEACHING_PROTOCOL.md → begin current learning / planning`。
 
 只读取当前任务所需的 Matrix 行和 Curriculum 段；需要历史证据边界时再读取 `LEARNING_LOG.md` 或 assessment archive。P0 assessment planning, start, or resume additionally requires `ASSESSMENT_SPEC.md`. Repository state takes precedence over conversation memory and model inference.
 

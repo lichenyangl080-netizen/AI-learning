@@ -4,7 +4,7 @@
 
 ## New Conversation Startup Order
 
-`CURRENT_STATE.md → relevant ABILITY_MATRIX rows → REVIEW_QUEUE.md → relevant current Phase of CURRICULUM.md → PHASE_EXECUTION_PLAN.md → TEACHING_PROTOCOL.md → begin learning / planning`
+`CURRENT_STATE.md → relevant ABILITY_MATRIX rows → REVIEW_QUEUE.md → CURRICULUM global route + relevant current Phase → PHASE_EXECUTION_PLAN.md → TEACHING_PROTOCOL.md → begin learning / planning`
 
 优先只读取当前任务相关行和段落。需要历史证据边界时再读取 `LEARNING_LOG.md` 或 assessment archive。聊天记忆和模型推断不得覆盖仓库状态。
 
@@ -27,6 +27,8 @@ Teaching coverage, capability certification and open verification are different 
 `现实问题 → 必要时的 task-local diagnosis → 最小完整 mental model → 方案 / Specification → AI-assisted practice → failure / edge case → Debug / Eval / Verify → ownership review → state archive`
 
 保持 `Chapter → Lesson → Section`；一个 Section 尽量解决一个完整问题。避免术语碎片、长时间纯理论和只做局部实现却不理解系统。
+
+新英文术语首次出现时立即附上简短中文含义；在真正需要使用时引入，不在章节开头堆积 glossary。已学术语只在明显遗忘或错误迁移时回顾。
 
 ### Conditional Diagnosis and Skip Gate
 

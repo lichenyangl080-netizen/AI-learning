@@ -28,9 +28,11 @@ Conceptual coverage may prevent repetitive theory without proving practical capa
 
 ## Operating States
 
-### Planning
+### Initial Curriculum Planning
 
 Formal Learning: `NO`; Formal Assessment: `NO`; no formal evidence yet.
+
+This state applies only before formal learning begins. Phase-start Research & Planning after P0 does not reset `Formal Learning Started`, discard evidence, or return the learner to an initial planning state.
 
 ### Phase 0 Formal Assessment
 
