@@ -1,5 +1,14 @@
 # Curriculum Changelog
 
+## v1.3 — Mainline and demand-triggered support route (2026-09-10)
+
+- Trigger: learner found sequential foundation phases low-yield and explicitly chose real Agent/Codex product building as the next primary route, while retaining strong interest in the P3 capability model.
+- Conclusion: route calibration, not curriculum replacement; the P0–P8 capability architecture remains.
+- Main impact: execution mainline becomes `P6 → P7 → P8`; P3 remains a cross-phase capability model, while P4/P5 become demand-triggered support tracks.
+- P6 is recalibrated around Specification, Context Gathering, Delegation, Steering, Diff Review, Testing, Eval, Correction and Iteration in one real product-building loop.
+- P3/P4 practical gaps and P1 Provider evidence remain open without forcing introductory theory repetition or blocking mainline progress unless the actual product requires them.
+- Preserved P0–P4 historical evidence and all current capability levels. Assessment Spec remains v1.0.1.
+
 ## v1.2 — AI-native Product Builder route recalibration (2026-09-02)
 
 - Trigger: learner explicitly chose an AI-native Product Builder orientation after questioning the ROI of deep traditional engineering under increasingly capable coding agents.

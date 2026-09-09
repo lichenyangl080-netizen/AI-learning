@@ -14,6 +14,14 @@
 - `REVIEW_QUEUE.md`: re-verification and review needs.
 - `CHANGELOG.md`: versions of course and operating specifications.
 
+## Teaching Coverage, Capability Evidence, and Open Verification
+
+- Teaching coverage answers whether a foundation should be taught again.
+- `ABILITY_MATRIX.md` answers what capability is currently certified and where evidence remains limited.
+- `REVIEW_QUEUE.md` tracks unresolved or natural re-verification opportunities.
+
+Conceptual coverage may prevent repetitive theory without proving practical capability. Conversely, `Not Assessed`, `Not Yet Assessed`, low confidence, or missing practical evidence does not automatically require restarting definitions. Mainline learning may proceed while nonblocking support evidence remains open; a support gap becomes blocking only when the actual product or the active mainline Exit Gate requires it.
+
 ## Single Source of Truth
 
 `CURRENT_STATE.md` determines the current lifecycle state. `ABILITY_MATRIX.md` determines the current capability conclusion. `ASSESSMENT_RUN_*.md` and `LEARNING_LOG.md` are historical evidence: they may explain why a baseline status was assigned, but MUST NOT override, downgrade, or replace later Matrix evidence. If the current Matrix conflicts with an older run record, the newer Matrix is authoritative unless the Matrix or run is explicitly marked corrupted or under reassessment. Project completion never proves mastery. `CURRENT_STATE.md` is authoritative for lifecycle state, blockers, and next action; `PHASE_EXECUTION_PLAN.md` is authoritative for the current Phase's execution route; `CURRICULUM.md` is authoritative for long-term structure. Conflicts otherwise resolve as: current repository state files > committed history > conversation memory > model inference.

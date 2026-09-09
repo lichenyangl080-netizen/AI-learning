@@ -1,4 +1,4 @@
-# AI-native Product Builder Curriculum v1.2
+# AI-native Product Builder Curriculum v1.3
 
 ## 职业定位
 
@@ -29,6 +29,15 @@ Multi-Agent Systems、AI Infrastructure、Kubernetes、Kafka、Advanced Distribu
 课程保留 P0–P8 的完整能力闭环与多能力螺旋加深，不采用机械串行学习。每个 Phase 都必须包含 Objective、Core Capabilities、Supporting Capabilities、Required Practice、Evidence Required、Exit Gate、Non-goals 与 Triggered Topics。
 
 禁止仅按学习时间、课程数量或项目完成推进。真实 implementation、runtime verification、关键 diff 审查、系统边界判断与最终产品行为验证仍是必要证据；但工程深度服务于产品与 AI capability ownership，不与传统后端或基础设施专家在底层深度上正面竞争。Product、AI UX、Visual / Interaction Judgment 从早期 Phase 贯穿，并在 P7 集中深化。
+
+## Execution Route
+
+- Mainline: `P6 → P7 → P8`.
+- P3 的 Context / Capability / Tool / Skill / Memory / Harness / Eval 模型持续贯穿主线；未完成的 P3 实践证据在真实产品中继续验证。
+- P4 与 P5 是 demand-triggered support tracks：外部集成、RAG、MCP、数据、权限、安全、恢复、部署与可靠性只在真实产品需要时加深。
+- 主线推进不要求每个较低编号的 support Phase 都先形式化 `PASSED`。未完成证据继续保留，并在实际产品或当前主线 Exit Gate 需要时转为 blocking。
+- 同一真实项目可以产生多个 Phase 的证据，但必须按能力分别归因，不能用项目完成替代能力结论。
+
 ## P0 — Evidence-based AI-native Capability Baseline
 
 ### Objective
@@ -166,7 +175,7 @@ Schema、权限边界、错误语义、context selection / compaction、token-ef
 
 ### Objective
 
-把外部知识、数据、权限与持久状态可靠地接入 AI 产品，并能作出明确的 integration trade-off。
+把外部知识、数据、权限与持久状态可靠地接入 AI 产品，并能作出明确的 integration trade-off。本 Phase 作为 support track，实践由真实项目的集成需求触发，不默认独立完整重学。
 
 ### Core Capabilities
 
@@ -199,7 +208,7 @@ MCP 以应用层接入、边界、简单 Server 与安全 / 权限理解为目�
 
 ### Objective
 
-将 AI 功能提升为可控、可信、可恢复且能向用户解释失败影响的产品系统，而非基础设施专项。
+将 AI 功能提升为可控、可信、可恢复且能向用户解释失败影响的产品系统，而非基础设施专项。本 Phase 作为 demand-triggered support track，由真实副作用、权限、可靠性或交付风险触发。
 
 ### Core Capabilities
 
@@ -228,39 +237,51 @@ Permissions、Approval、Undo / Rollback、Side Effects、Failure Impact、Recov
 ### Triggered Topics
 
 专门 durable execution 技术仅在真实长任务、并发或恢复需求出现时引入。
-## P6 — Eval-driven Improvement & AI-assisted Engineering
+## P6 — AI-assisted Product Building & Eval-driven Iteration
 
 ### Objective
 
-把 Eval 建立为长期核心能力：用产品、AI UX、视觉 / 交互质量、用户证据、回归与失败归因持续改进 AI 产品，并验证 AI-agent 生成的工作。
+使用 Codex / Agents 完成一个真实 AI-native 产品构建与改进循环，并保持对需求、上下文、实现范围、产品行为和证据的 ownership。Eval 是迭代控制系统，而不是项目末尾的评分步骤。
 
 ### Core Capabilities
 
-Dataset、Edge / Adversarial / Regression、Human Eval、Rule / Code Grader、LLM-as-Judge、Trace-based Eval、Failure Taxonomy、Failure Attribution、Product Judgment、UX / Visual Quality Evaluation、Comparison 与 AI-assisted Engineering。
+Problem Framing、Specification、Acceptance Criteria、Context Gathering、Delegation、Steering、Agent Collaboration、Responsibility-layer Judgment、Diff Review、Testing、Eval Design、Failure Attribution、Correction、Iteration 与 Final Acceptance。
 
 ### Supporting Capabilities
 
-Unit / Integration / Regression Test、Code Review、Problem Framing、Specification、Context Gathering、Plan、Delegation、Diff Review、Testing、Correction、Debug 与 Iteration。
+P3 的 Context / Capability / Tool / Skill / Harness / Memory 模型；必要的 Workflow、AI UX、Visual / Interaction、Frontend、Integration、Reliability、Git 与 runtime verification literacy。
 
 ### Required Practice
 
-为一个产品系统创建最小 Eval 集，覆盖行为、体验或质量边界；定位失败归因，并完成一次有证据的产品或实现改进循环。
+围绕一个真实产品任务完成：
+
+`Problem / Scope → Specification → Context Package → Agent Delegation → Implementation → Key Diff Review → Runtime / Failure Verification → Eval → Diagnosis → Correction → Re-evaluation → Acceptance`
+
+学习者负责目标、边界、证据标准、关键判断与最终验收；Agent 可以承担大量实现。P3/P4/P5 能力只在项目实际需要时自然引入和验证。
 
 ### Evidence Required
 
-能审查 AI 生成的关键 diff、验证改动，说明案例、用户反馈、质量标准或指标为何支持该改进。
+能够：
+
+- 把模糊产品意图转成可执行 Specification、边界与 acceptance criteria；
+- 为 Agent 提供高信号上下文并进行有效 delegation / steering；
+- 判断改动责任层，审查关键 diff，识别越界或不相关修改；
+- 设计并运行至少包含正常与关键失败场景的验证；
+- 建立小型代表性 Eval，区分事实检查、质量判断与人工验收；
+- 根据 trace、test、runtime、Eval 或用户反馈定位失败并完成一次有证据的改进；
+- 对最终结果作出 accept / reject 判断，并保留未验证边界。
 
 ### Exit Gate
 
-能用 Eval、软件测试与产品 / UX 证据共同证明一次改进优于原方案。
+能完成一次端到端 AI-assisted product-building loop，并以 Specification、关键 diff、运行验证、Eval 对比、失败归因和修正后的真实行为证明改进成立。Codex 产出、build pass、单次成功或主观感觉均不能单独通过 Exit Gate。
 
 ### Non-goals
 
-不把 Eval 等同于单一模型分数；Codex 写出代码不等于用户掌握；不以感觉替代验证。
+不以闭卷手写大量代码、框架熟练度或提交数量衡量掌握；不为了覆盖课程强行加入 RAG、MCP、数据库、复杂 Agent 或基础设施；不把 Eval 简化为一个 LLM 分数。
 
 ### Triggered Topics
 
-复杂 judge、模型路由或缓存仅在数据、产品收益与成本信号支持时引入。
+外部集成、权限、安全、恢复、部署、成本、可靠性、多 Agent 或高级 Harness 只由实际产品风险、失败或收益信号触发。
 ## P7 — AI-native Product & Design Studio
 
 ### Objective

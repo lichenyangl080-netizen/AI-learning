@@ -76,3 +76,9 @@
 - Auth, database modeling, MCP protocol detail, and other supporting depth were compressed to learner-relevant risk and boundary judgment. GPT-6 Computer Use informed the integration choice but did not change the Curriculum: structured API is the primary path and Computer Use is exceptional.
 - No duplicate Integration Micro Lab was created; P4 practice should arise from real external API, RAG, MCP, persistent-state, permission, cache / sync, or Computer Use needs.
 - P4 conceptual coverage is not implementation evidence or an Exit Gate result. P3 practical Exit-Gate evidence remains pending; P4 remains ahead-of-transition coverage only.
+## Curriculum Route Audit — 2026-09-10
+
+- Learner selected `P6 → P7 → P8` as the execution mainline, prioritizing AI-assisted product building, Eval-driven iteration, product / AI UX and independent transfer.
+- P3 remains an ongoing capability model; its current practical validation is still pending.
+- P4 core concepts are covered; future practice should arise from natural product needs. P5 becomes demand-triggered support rather than a standalone full course.
+- Existing P0–P4 history and capability conclusions are not rewritten or upgraded. P1 Provider evidence remains deferred.

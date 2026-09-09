@@ -1,36 +1,35 @@
 # Current Learning State
 
-Curriculum Version: v1.2
+Curriculum Version: v1.3
 Assessment Spec Version: v1.0.1
 
-Lifecycle Position: P3 Core Instruction Complete / Practical Exit-Gate Evidence Pending / P1 Exit Gate Provider Evidence Deferred
-Current Phase: P3 — Context & Capability Engineering
-Current Learning Position: P3 Core Instruction Complete / Practical Exit-Gate Evidence Pending; P4 Core Conceptual Coverage Ahead of Formal Transition
-Module: P3 Skill / Capability Practical Validation — In Progress
-Status: P2 PASSED; P3 NOT PASSED / PRACTICAL EXIT-GATE EVIDENCE PENDING; P4 CONCEPTUAL COVERAGE AHEAD OF FORMAL TRANSITION; P1 EXIT GATE PROVIDER EVIDENCE DEFERRED
+Lifecycle Position: P6 Phase-start Research & Planning / Open Support Evidence Retained
+Current Phase: P6 — AI-assisted Product Building & Eval-driven Iteration
+Current Learning Position: P6 Phase-start Research & Planning / Not Yet Confirmed
+Module: P6 Execution Plan — Research Pending
+Status: P2 PASSED; P3 PRACTICAL EXIT-GATE EVIDENCE PENDING; P4 PRACTICAL EVIDENCE PENDING THROUGH NATURAL PROJECTS; P5 DEMAND-TRIGGERED; P6 FORMAL INSTRUCTION NOT STARTED; P1 PROVIDER EVIDENCE DEFERRED
 
-Open Current-Phase Exit Evidence: P3 — Practical Validation Pending
-Open Prior-Phase Exit Evidence: P1 — Provider Evidence Deferred
 Formal Learning Started: YES
 Formal Assessment Active: NO
 Phase 0 Assessment Completed: YES
 Active Assessment Run: None
 Completed Assessment Run: ASSESSMENT_RUN_001
-Baseline Reference: ASSESSMENT_RUN_001.md — read when evidence-boundary clarification is needed.
+Baseline Reference: ASSESSMENT_RUN_001.md — read only when evidence-boundary clarification is needed.
 
 ## Current Focus
 
-P2 is complete and its Exit Gate is `PASSED`; detailed historical practice remains in `LEARNING_LOG.md`.
+The execution mainline is now `P6 → P7 → P8`. P6 will use Codex / Agents to build a real product through Specification, Context Gathering, Delegation, Steering, Diff Review, Testing, Eval, Correction and Iteration. P6 formal instruction has not started; its Phase Execution Plan must be researched and confirmed first.
 
-P3 core instruction is complete. The ongoing Skill / Capability practical validation is not completion evidence, so P3 remains not passed. P4 core conceptual instruction has been covered ahead of formal phase transition; this is not P4 implementation or Exit-Gate evidence, and P4 has not formally started or passed. After the P3 gate is complete, enter P4 natural practice / validation without re-teaching these covered foundations.
+P3 core instruction and P4 core conceptual instruction are already covered. Missing practical evidence does not reopen their introductory teaching. It remains available for natural verification inside real product work.
 
-## Open Prior-Phase Exit Evidence
+## Open Support and Prior-Phase Evidence
 
-P1 remains not formally `PASSED`; its formal Exit Gate is deferred solely for Provider evidence unavailable without Provider API access.
+- P3: Skill / Capability practical Exit-Gate validation pending; P3 is not marked `PASSED`.
+- P4: external integration, data, RAG, MCP and persistent-state practice pending only when a real product needs them; P4 is not marked `PASSED`.
+- P5: trust, control, security, recovery, deployment and reliability are demand-triggered by actual product risk rather than a standalone full course.
+- P1: real Provider Model API, Secret handling, Structured Output with runtime validation, and `UI → Server → Provider → Validation → UI` evidence remain deferred until Provider API access is available. Real Provider Tool Calling remains optional verification unless an actual integration requires it.
+- P2: Exit Gate remains `PASSED`.
 
-- Real Provider Model API call and Provider API Key / Secret handling
-- Real Provider Structured Output with runtime validation and a failure path
-- Real `UI → Server → Provider → Model Output → Validation → UI` end-to-end integration
-- Real Provider Tool Calling remains deferred verification evidence for P1/P2 unless required by the actual integration; it is not a standalone P1 Exit Gate requirement.
+Open support evidence is nonblocking unless the actual product or the active mainline Exit Gate requires it.
 
-Next Action: Continue P3 practical validation. After the P3 gate, enter P4 natural practice / validation without re-teaching the covered conceptual foundations.
+Next Action: Research P6 → produce/update the P6 Execution Plan → obtain learner confirmation → begin formal P6 learning.

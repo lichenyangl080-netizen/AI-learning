@@ -1,442 +1,115 @@
 # Teaching Protocol
 
-本协议规定 AI-native Product Builder 课程的教学与恢复方式。它约束教学过程，不代表任何课程已经开始。
+本协议规定 AI-native Product Builder 课程如何恢复、教学和形成证据。当前进度只由状态文件决定。
 
 ## New Conversation Startup Order
 
-每次开始教学或恢复学习前，必须按以下顺序读取并判断：
+`CURRENT_STATE.md → relevant ABILITY_MATRIX rows → REVIEW_QUEUE.md → relevant current Phase of CURRICULUM.md → PHASE_EXECUTION_PLAN.md → TEACHING_PROTOCOL.md → begin learning / planning`
 
-```text
-CURRENT_STATE.md
-↓
-ABILITY_MATRIX.md
-↓
-REVIEW_QUEUE.md（如存在）
-↓
-CURRICULUM.md 的当前相关 Phase
-↓
-PHASE_EXECUTION_PLAN.md
-↓
-TEACHING_PROTOCOL.md
-↓
-开始本次学习 / planning
-```
-## Conditional Phase 0 Assessment Loading
+优先只读取当前任务相关行和段落。需要历史证据边界时再读取 `LEARNING_LOG.md` 或 assessment archive。聊天记忆和模型推断不得覆盖仓库状态。
 
-When P0 assessment is being planned, started, or resumed, read:
+P0 assessment planning, start, or resume additionally reads `ASSESSMENT_SPEC.md`, then an active run file if one exists. Do not create an assessment run file before formal P0 explicitly starts.
 
-```text
-CURRENT_STATE.md
-↓
-ABILITY_MATRIX.md
-↓
-REVIEW_QUEUE.md
-↓
-Relevant P0 section of CURRICULUM.md
-↓
-TEACHING_PROTOCOL.md
-↓
-ASSESSMENT_SPEC.md
-↓
-Active assessment run state, if one exists
-```
+## State and Evidence Semantics
 
-Do not create an assessment run file until formal assessment explicitly starts.
+Teaching coverage, capability certification and open verification are different facts:
 
-`PHASE_EXECUTION_PLAN.md` remains the current Phase execution-route source; it does not replace P0 assessment evidence and is read during P0 assessment only when it explicitly corresponds to the P0 work being planned.
+- 已覆盖且核心机制理解充分：不重复基础理论。
+- `ABILITY_MATRIX.md`：只记录可支持的能力结论、置信度与证据边界。
+- `REVIEW_QUEUE.md`：保留尚未完成的实践或自然再验证。
 
+因此，“conceptual instruction covered + practical evidence missing”应进入应用或验证，不得仅因 `Not Assessed`、`Not Yet Assessed`、Low confidence 或缺少实践证据而从定义重讲。概念理解也不能自动升级能力等级。
 
-禁止只根据聊天记忆、上一段对话印象或模型推测决定教学内容。若聊天记忆与仓库状态冲突，仓库中的状态文件优先。
+## Default Learning Loop
 
-## Baseline Evidence Loading
+优先使用：
 
-In the first P1 startup after P0 completion, when `ABILITY_MATRIX.md` evidence is too terse to determine the teaching delta, when Initial / Assisted / Ownership history matters, or when conceptual-versus-practical scope is ambiguous, read the most recent completed assessment run.
+`现实问题 → 必要时的 task-local diagnosis → 最小完整 mental model → 方案 / Specification → AI-assisted practice → failure / edge case → Debug / Eval / Verify → ownership review → state archive`
 
-A completed run is historical evidence: it may explain the current Matrix but cannot override an updated Matrix. Do not mechanically reread the entire run report for every lesson; load only when the detailed evidence boundary is needed.
+保持 `Chapter → Lesson → Section`；一个 Section 尽量解决一个完整问题。避免术语碎片、长时间纯理论和只做局部实现却不理解系统。
 
-## Project Selection Preference
+### Conditional Diagnosis and Skip Gate
 
-When multiple projects can provide equivalent curriculum evidence, prefer AI-native products with meaningful visual design, interaction design, state transitions, and frontend craft over pure data-processing or admin-style projects.
+先检查已有仓库证据和当前上下文：
 
-Visual Design / Interaction Design / AI-native UX / Design Engineering literacy is a formal long-term secondary learning axis alongside the primary Product / Capability / Workflow / Context / Tool / Eval axis. Confirmed learning priority does not equal confirmed learner capability: no visual or interaction `ABILITY_MATRIX.md` Current Status may change without new evidence.
+- 足以证明核心机制已理解：直接进入新边界、应用或验证，最多用 1–2 句连接。
+- 证据不足且确实需要决定教学深度：使用 1–3 个不泄露答案的简短机制题。
+- 暴露局部缺口：只补该缺口；明显错误或新场景迁移失败时才重讲相关基础。
 
-## Default Lesson Structure
+禁止为了课堂感、固定流程或出题本身提问；禁止提问后立即自行回答；禁止新 Phase、项目、Lesson 或对话触发 broad reassessment。诊断只决定教学深度，不替代 runtime、diff、debug 或 Eval 证据。
 
-教学应优先遵循：
-
-```text
-现实场景
-↓
-用户先做判断 / First-pass
-↓
-暴露当前认知与关键缺口
-↓
-补充最少必要理论
-↓
-方案设计
-↓
-AI / 搜索 / 文档 / Codex 辅助实践
-↓
-主动制造或识别失败
-↓
-Debug
-↓
-Eval / Verify
-↓
-复盘与状态归档
-```
-
-禁止长期采用“定义 → 定义 → 术语堆砌 → 很久以后才实践”的教材式教学。
-
-### Section Granularity and Diagnostic Prompts
-
-保持 `Chapter → Lesson → Section` 结构，避免切成大量孤立术语小节；一个 Section 应尽量解决一个完整问题。新内容可先用不预设答案的机制题探测当前任务相关的认知模型。若学习者已能正确解释核心机制，只补必要的专业术语和边界后直接推进；不得重复测试 P0 已有充分证据的能力。学习目标是能判断、能审查 Codex、能验证真实行为，而非为手写代码而手写。诊断节奏优先是：Section 开始时仅在需要时提出 1–3 个有信息量的问题 → 根据回答跳过或补缺口 → 连续讲清一个完整机制 → 必要时提出一个关键判断题 → 实践 / 验证；禁止为了课堂感连续碎片化问答。
-
-## Deduplication and Section Skip Gate
-
-### A. 已掌握内容去重
-
-已有学习证据或当前回答已清楚说明的机制，不得再作为新知识完整展开。相关时仅用 1–2 句连接旧 mental model、补新的边界 / 术语 / 场景；只有遗忘、错误理解、错误迁移或新场景暴露真实缺口时才重讲。长期去重集合包括：local / partial success ≠ overall success；build / typecheck / lint pass ≠ runtime behavior verified；stale response / stale generation、error classification、retry / idempotency、Schema-valid ≠ semantically correct、external input is untrusted、loading / progress / retry / stop 基础 AI UX、normal / failure / edge-case 测试直觉，以及 deterministic logic 更适合 code 而非 LLM。
-
-### B. Section Skip Gate
-
-先检查已有仓库证据与当前上下文是否已经足以证明核心机制已掌握；若足够，直接跳过或只用 1–2 句连接旧 mental model。只有证据不足、确实需要判断是否跳过时，才使用 1–3 个简短诊断问题。诊断只决定完整教学、补缺口或直接跳过：能正确解释则只补术语、边界或新知识后推进；只理解一部分则只补缺口；明显不会才正常展开。禁止为了课堂感、固定格式或出题本身而提问；禁止提出问题后立即自行回答的 pseudo diagnostic；不得成为 broad reassessment，也不得因新 Chapter / Lesson 重测已有充分证据的整片能力。
-
-### C. 诊断与实践边界
-
-诊断必须发生在该内容正式讲解之前；已给出答案后不得把相同问题的回答伪装成 prior evidence。为产生 required evidence 的实践（runtime verification、Provider integration、Tool execution、failure injection、Eval、diff review、debugging）直接开始，实践中的预测、判断、解释与复盘自然形成 evidence。
-
-### D. 术语与责任重点
-
-新英文术语首次出现时立即给出简短中文含义，不在章节开头堆积术语；已学术语只在明显遗忘时快速回顾。继续以 mechanism / responsibility / system boundary 优先于 syntax：Codex 可承担大量实现，学习者负责 mental model、product / architecture judgment、runtime verification、关键 diff review、failure interpretation 与最终 acceptance judgment，而不是以手写大量代码作为 P1 主要目标。
+长期去重包括：局部成功不等于整体成功；build/typecheck/lint pass 不等于 runtime verified；stale result；Schema-valid 不等于 semantically correct；external input is untrusted；retry/idempotency；loading/progress/failure/recovery 基础 UX；deterministic logic 优先使用 code。
 
 ## Mental-model-first, Experiment-verified Learning
 
-For conceptually dense engineering topics, especially when the learner does not yet have strong implementation foundations, teaching should normally build a coherent mental model before relying on large project implementation.
+新机制先建立：为什么存在、责任属于哪层、能保证什么、不能保证什么、信息与控制如何流动。再改变条件暴露假设，例如 timeout、重复触发、乱序、部分成功、runtime data invalid、retry duplicate 或层间成功冲突。
 
-The preferred learning loop is:
+实践优先选择小而高信息密度的真实实验：追踪链路、预测行为、修改关键行、制造失败、检查状态迁移、审查关键 diff、比较预期与实际。Code 是验证理解的实验工具，不是实现量目标。
 
-```text
-System / Mental Model
-↓
-Adversarial Reasoning
-↓
-Micro Lab
-↓
-Foundation Consolidation
-↓
-Integration
-```
+若多个基础概念自然出现，可做短 Foundation Consolidation，把碎片连接成系统；不得在当前项目不需要时插入完整语言、框架或基础设施课程。最终应能连接：
 
-### 1. System / Mental Model
+`concept → product / architecture → code or agent action → runtime behavior → failure → diagnosis → verification`
 
-First establish why the mechanism exists, where it sits in the system, what responsibility it owns, what problem it solves, and how it connects to surrounding layers.
+## AI-assisted Engineering Ownership
 
-The learner should first understand questions such as:
+AI、搜索、官方文档、Codex 与 coding agents 是默认真实工程环境。学习者不必像无 AI 程序员一样闭卷生成完整 debug path，但必须在关键处承担：
 
-- Why does this mechanism or layer exist?
-- What responsibility belongs here?
-- What responsibility does not belong here?
-- What would happen if this layer disappeared?
-- What can this mechanism guarantee?
-- What can it not guarantee?
-- How does information or control flow through the surrounding system?
+- problem framing、scope、Specification 与 acceptance criteria；
+- context gathering、delegation、steering 和对 Agent diagnosis 的质疑；
+- responsibility-layer judgment、关键 diff review 与无关修改识别；
+- test / Eval 设计、真实运行、失败解释与 requirement change 后的 ownership；
+- 最终 accept / reject 判断。
 
-Prefer system relationships, scenarios, architecture diagrams, request flows, state flows, and concrete examples over beginning from isolated syntax or framework vocabulary.
-
-Do not begin primarily from API syntax when the underlying responsibility or system problem has not yet been understood.
-
-For example:
-
-- Do not introduce React state primarily as `useState` syntax. First establish why ordinary variables are insufficient for representing UI state and why some state changes must participate in rendering.
-- Do not introduce TypeScript primarily as interface/type syntax. First establish what compile-time checking can guarantee, what it cannot guarantee, and why runtime data can still violate a TypeScript type.
-- Do not introduce HTTP primarily as a list of methods and status codes. First establish the Browser / Client / Server communication boundary and the lifecycle of a real request.
-
-### 2. Adversarial Reasoning
-
-Once an initial mental model exists, deliberately vary scenario conditions to expose hidden assumptions, missing boundaries, and incorrect generalizations.
-
-Examples include:
-
-- What if the request times out?
-- What if the user triggers the same action twice?
-- What if the Model succeeds but the Server fails afterward?
-- What if the Server succeeds but the Browser disappears?
-- What if the response arrives out of order?
-- What if returned JSON is syntactically valid but violates the expected structure?
-- What if TypeScript accepts the code but runtime data is wrong?
-- What if the user closes the page while server-side work continues?
-- What if retry creates duplicated work?
-- What if one layer reports success while the overall user-visible operation still fails?
-
-The purpose of these questions is not quiz scoring or reassessment. The purpose is to refine the learner's mental model.
-
-Prefer:
-
-```text
-initial judgment
-→ changed condition
-→ contradiction or gap
-→ explanation
-→ revised model
-```
-
-over repeated definition questions.
-
-### 3. Micro Lab
-
-Use compact real-code experiments to verify important mental models. Micro Labs should normally be much smaller than full project implementation.
-
-Prefer high-information-density experiments such as:
-
-- trace one request through a small codebase;
-- identify which code runs in Browser versus Server;
-- predict runtime behavior before execution;
-- change several meaningful lines;
-- deliberately return HTTP 500;
-- delay a response;
-- remove or rename a returned field;
-- create malformed runtime data;
-- trigger an action twice;
-- inspect loading / success / error state transitions;
-- compare expected behavior with observed behavior;
-- inspect a small diff produced by Codex; and
-- identify which layer should be modified for a changed requirement.
-
-The learner does not need to manually write large amounts of boilerplate code to make the experiment valuable. Codex and other coding agents may normally assist implementation.
-
-However, the learner should retain responsibility for:
-
-- predicting important behavior;
-- understanding the relevant responsibility layers;
-- explaining why the experiment behaves as observed;
-- identifying meaningful changes;
-- reviewing important diffs;
-- changing key behavior when requirements change; and
-- verifying the final result.
-
-Code should function as an experimental instrument for validating understanding, not merely as a volume-of-implementation target.
-
-### 4. Foundation Consolidation
-
-Project-triggered and system-triggered learning must not leave programming fundamentals permanently fragmented. After several related concepts have appeared naturally, perform a short Foundation Consolidation step. The purpose is to reconnect previously encountered fragments into an organized structure.
-
-Examples:
-
-- After JavaScript concepts have naturally appeared, consolidate relationships among variables, functions, objects, arrays, events, async / await, Promise, and errors.
-- After React concepts have appeared, consolidate state, events, rendering, props, components, and client interaction.
-- After TypeScript concepts have appeared, consolidate type constraints, object shapes, union types, optional fields, compile-time checking, and runtime validation.
-- After API work has appeared, consolidate request, response, HTTP status, serialization, client/server boundary, and error categories.
-
-Foundation Consolidation should not become a traditional full programming course inserted before project progress. Do not front-load an entire language or framework curriculum when the current Phase does not require it.
-
-Instead:
-
-```text
-encounter concepts naturally
-→ understand their role
-→ use them
-→ periodically organize them into a coherent foundation
-```
-
-### 5. Integration
-
-After several mental models have become connected, use a real feature or training project to integrate them. At this stage, the learner should increasingly map an existing conceptual system onto real implementation.
-
-The project should test whether the learner can connect:
-
-```text
-concept
-→ architecture
-→ code
-→ runtime behavior
-→ failure
-→ debugging
-→ verification
-```
-
-Projects are important integration environments and evidence environments. However, they do not need to be the first entry point for every concept. The learner should ideally enter an integration project with a partial but coherent understanding of how the system is supposed to work, rather than discovering every layer only through local bugs.
-
-## Balance Rules
-
-Maintain the following balance:
-
-- Avoid long theory-only stretches with no contact with real systems.
-- Avoid continuous implementation where the learner only fixes local problems without understanding the larger system.
-- Prefer fewer, higher-information-density experiments over repetitive coding exercises.
-- Real implementation evidence remains required where the Curriculum and Phase Exit Gate require it.
-- Conceptual understanding alone does not establish implementation mastery.
-- Evidence and ownership boundaries are defined in `Codex Completion Is Not Mastery` and `Realistic AI-native Coding` below.
-- Framework/API syntax should normally be introduced after its underlying responsibility or problem is understood.
-- Task-local First-pass follows `No Phase-entry Reassessment After P0` below.
-- Scenario reasoning should be used to expose understanding gaps, not to create unnecessary exam-style questioning.
-- When the learner already demonstrates a reliable mental model, do not repeat introductory explanation merely to preserve a fixed lesson format.
-- When real runtime behavior contradicts the learner's mental model, prefer investigating the contradiction rather than immediately supplying the answer.
-
-## Cognitive Feedback
-
-Teaching should recognize cognitive feedback as a legitimate form of learning feedback.
-
-Meaningful learning progress may occur when:
-
-- a previously vague system boundary becomes clear;
-- multiple isolated concepts become connected;
-- a prior assumption is shown to be incomplete;
-- the learner can predict a new scenario using the revised model; or
-- the learner understands why a mechanism exists instead of only remembering how to invoke it.
-
-Cognitive feedback does not replace implementation evidence. It helps build the model that later implementation and debugging will verify.
-
-## Phase-specific Application
-
-Phase-specific sequences belong in `PHASE_EXECUTION_PLAN.md`; this protocol retains only reusable teaching rules.
-
-## AI and Tool Use
-
-AI、搜索、官方文档、Codex、代码生成与调试工具均属于默认允许的真实工程环境。
-
-如需了解用户的已有判断，可在使用工具前进行简短 First-pass，例如：“你目前会如何判断、设计或排查？”First-pass 仅用于诊断教学起点，不作为闭卷考试，也不得替代真实工程能力证据。
-
-## Codex Completion Is Not Mastery
-
-即使 Codex 完成了代码、设计或完整系统，用户能力等级也不得自动升级。能力升级至少应基于一种或多种真实证据：
-
-- 能解释关键设计选择及其取舍；
-- 新需求出现时知道应修改哪一层；
-- 能审查关键 diff，识别明显风险或不合理建议；
-- 出错时知道从何处开始排查；
-- 能判断 Codex 的建议是否合理；
-- 能进行测试、验证或 Eval；
-- 能在相似但不完全相同的任务中迁移使用。
-
-对 supporting engineering topics，重点不是让学习者在实现细节上超过 Codex，而是能发现风险、知道该追问什么、判断方案是否值得处理，并验收关键产品行为。项目交付状态与用户能力状态必须分开记录。
-
-## Terminology Teaching
-
-- 新英文术语首次出现时，必须立即给出“英文术语 + 简短中文含义”；不得让尚未掌握的术语以裸英文连续出现并承担主要解释。
-- 不在每节课开头堆砌 glossary；术语在即将频繁使用时引入。
-- 已学概念再次出现时，用 1–2 句话回顾；只有明显遗忘或理解错误时才重讲。
-- 提问应服务于判断、设计、解释、调试或验证，避免为制造课堂感而连续提问基础定义。
+Codex 完成代码、设计或产品不等于学习者掌握。能力升级必须来自可归因的解释、修改、调试、验证、评审或迁移证据。项目交付状态与能力状态分开记录。
 
 ## Phase-start Research and Planning
 
-Before beginning each major curriculum Phase after P0, perform a dedicated Phase-start research and planning step before formal instruction begins. A major Phase means P1, P2, P3, and later Phases; this rule does not apply to every lesson, submodule, or ordinary project iteration.
+每个新的 major mainline Phase 在正式教学前执行：
 
-The Phase-start process must:
+1. 读取当前状态、相关 Matrix、Review Queue、Curriculum Phase 和必要历史证据。
+2. 查询官方文档、primary sources、当前工程实践、高质量近期实现及必要的产品 / 市场证据。
+3. 比较 Curriculum target、learner evidence、current practice 与 project need。
+4. 在 `PHASE_EXECUTION_PLAN.md` 形成目标、Learning Delta、项目、里程碑、实践、失败场景、验证/Eval、证据、工具、成本/延迟/可靠性、triggered topics 与 non-goals。
+5. 交学习者确认后才开始正式 Phase 教学。
 
-1. Read the current repository state, including `CURRENT_STATE.md`, `ABILITY_MATRIX.md`, `REVIEW_QUEUE.md` when relevant, the relevant `CURRICULUM.md` section, and prior-phase evidence when needed.
-2. Research current external information relevant to the Phase. Prefer authoritative and up-to-date sources: official documentation, primary technical sources, current engineering practices, high-quality recent open-source implementations, and recent product or job-market evidence when it materially helps planning.
-3. Compare Curriculum targets, current learner evidence, current technology/practice, and current project needs.
-4. Produce and record the Phase Execution Plan in `PHASE_EXECUTION_PLAN.md` before formal teaching begins.
+Research & Planning 不是 reassessment，不得静默改写长期 Curriculum。
 
-The Phase Execution Plan should cover, when relevant:
+## Mainline and Support Tracks
 
-- Phase objective;
-- Learning Delta;
-- training product / project;
-- capability sequence and major milestones;
-- implementation practice, debugging / failure scenarios, and verification / testing / Eval;
-- required evidence;
-- tools / frameworks;
-- cost / latency / reliability considerations;
-- triggered topics; and
-- explicit non-goals.
+当前执行主线是 `P6 → P7 → P8`。P3 capability model 持续贯穿；P4/P5 作为 demand-triggered support tracks。
 
-Present the Phase Execution Plan to the learner for confirmation before formal Phase instruction begins.
+主线推进不要求每个低编号 support Phase 先形式化 `PASSED`。P3/P4/P5 gap 保留在 `REVIEW_QUEUE.md`，并在真实产品自然需要时补齐。Support evidence 仅在实际产品或当前 mainline Exit Gate 需要时成为 blocking。
 
-Phase-start research may update execution details, examples, tools, frameworks, and teaching sequence based on current information. It must not silently redesign the long-term Curriculum; structural route changes require explicit justification and learner agreement.
+同一项目可以产生多个 Phase 的证据，但必须分别归因。P6/P7/P8 的 `Evidence Required` 和 `Exit Gate` 仍必须满足，不得因路线压缩而弱化。
 
-Phase-start Research & Planning is not reassessment. Reuse existing `ABILITY_MATRIX.md` and completed assessment evidence; do not rebuild the learner baseline merely because a new Phase begins. Task-local First-pass diagnosis may still be used during learning when needed.
+## Teaching Depth and Non-goals
 
-For every future major Phase, the process is: Phase research → Phase Execution Plan → learner confirmation → formal Phase learning. Apply this as a generic Phase-start rule; determine current progress only from `CURRENT_STATE.md`, and do not use it to infer or restore a Pre-P1 state.
+教学深度由以下共同决定：
 
-## No Phase-entry Reassessment After P0
+`Curriculum Target + Current Evidence + Current Project Need`
 
-This is a Hard Rule.
+Supporting topics 只补当前风险所需的最小完整基础，不因 Auth、Security、Database、RAG、MCP、Deployment 等重要就自动扩展为专项课程。若要进入某 Phase 的 Non-goal，必须说明真实项目触发原因。不得追逐框架或热点。
 
-Once Phase 0 has been completed, later phases must inherit the existing `ABILITY_MATRIX.md` and completed assessment evidence.
+项目优先选择有真实 AI capability、产品判断、视觉/交互状态和用户价值空间的方向。Visual / Interaction 是正式第二学习轴，但学习优先级不等于已有能力。
 
-Do not start a new broad capability assessment merely because a new Phase, project, lesson, or conversation begins.
+## Verification and Product Feedback
 
-A First-pass after P0 is task-local teaching diagnosis only:
+真实 implementation、runtime behavior、failure / edge case、关键 diff、Eval 与最终产品验收是高价值证据。事实与结构优先使用 code/test/runtime checks；语义和质量可使用 LLM Judge；最终审美、产品价值和高价值主观判断由 Human 验收。单次成功不能证明稳定改善。
 
-- it should concern the capability immediately needed by the current task;
-- it should normally take only a few minutes or less;
-- it must not re-test multiple previously assessed domains;
-- it must not rebuild the learner baseline or block Phase entry;
-- existing verified evidence should be reused instead of re-tested.
-
-A new formal reassessment is allowed only when:
-
-1. the learner explicitly requests reassessment; or
-2. repository state explicitly marks an assessment as active.
-
-A post-P0 Phase startup means: research → Phase Execution Plan → learner confirmation → formal learning. It does not mean “start a broad capability assessment”.
+用户验证应尽早自然出现；P7 再集中深化 user testing、metrics、rollout、adoption 与 iteration。
 
 ## Hard Rules
 
-### Phase Exit Gate
-
-不能因为学习时间、课程数量或项目完成进入下一 Phase。必须根据该 Phase 的 `Evidence Required` 与 `Exit Gate` 判断。
-
-#### External Evidence Deferred Exception
-
-Only an external-access block may permit entry to the next Phase before the prior Phase is formally `PASSED`. All conditions must hold:
-
-- all locally completable learning and required local evidence are complete;
-- remaining evidence is blocked only by external resources or access;
-- the missing evidence is not a blocking prerequisite for the next Phase;
-- the prior Phase remains explicitly `NOT PASSED` / evidence deferred;
-- the missing evidence remains in `REVIEW_QUEUE.md`; and
-- it must be completed when access becomes available.
-
-This narrow exception does not weaken the general Phase Exit Gate.
-
-### Non-goals Protection
-
-进入每个 Phase 前必须检查对应 `Non-goals`。如果教学内容开始深入 Non-goal，必须明确说明为什么当前项目触发了它。禁止因为某技术有趣、热门或模型建议就自动深入。
-
-### Ability-controlled Teaching Depth
-
-教学深度必须由下列三项共同决定：
-
-```text
-Curriculum Target
-+
-ABILITY_MATRIX Current Evidence
-+
-Current Project Need
-```
-
-已经达到较高能力的内容不能从定义重新讲起。存在 Blocking Gap 时，只补当前任务需要的最小完整基础。Auth、Security、Database、API 等 supporting capability 不因重要性自动扩展为专项课程，深度由当前产品风险与真实需求触发。
-
-### Hard Rules vs Default Practices
-
-Hard Rules 不可改变：
-
-- Repository-state priority (see New Conversation Startup Order);
-- AI / 搜索 / Codex 属于默认真实工程环境；
-- Evidence / ownership requirements (see `Codex Completion Is Not Mastery` and `Realistic AI-native Coding`);
-- Spiral Deepening；
-- Phase Exit Gate；
-- Framework 不是课程目标；
-- 项目状态与能力状态分离。
-
-Default Practices 可适应：课时长度、例子数量、使用模型、项目具体主题、类比方式、练习数量与复习形式。教学可以适应，但不能改变课程哲学。
-
-### Early User Validation
-
-真实用户与产品验证不得只出现在后期。早期阶段在条件允许时可以进行少量目标用户观察、Workflow Feedback 或 Usability Feedback；后期再升级到 Metrics、Repeated Usage、Rollout 与 Adoption。
-
-### Meaningful Deviation Logging
-
-如果正式教学明显偏离计划顺序、跳过某模块、提前引入 Triggered Topic 或改变某 Phase 内容，必须记录原因。正常课堂适应不等于课程改版；只有结构性变化才允许修改 `CURRICULUM.md`。稳定的教学方法调整应在 Phase 或 major checkpoint 时写回本协议，而不是只留在 conversation memory。
+- Repository state priority.
+- No broad phase-entry reassessment after P0.
+- AI/Codex allowed; Codex completion is not mastery.
+- Teaching coverage prevents repetition but does not certify capability.
+- P6/P7/P8 Exit Gates remain evidence-based.
+- Frameworks and implementation volume are not curriculum goals.
+- Project state and capability state remain separate.
+- Structural route changes require audit justification and learner agreement.
+- Meaningful deviations are recorded; ordinary lesson adaptation does not rewrite Curriculum.
 
 ## Phase 0 Evidence Fidelity
 
-Long-term records must preserve verified and unverified boundaries, evidence origin, and important instability. Teaching starts from `Curriculum Target - Verified Evidence = Learning Delta`, not a label alone. Conceptual understanding does not replace practical operation; recognition or scaffolded answers do not equal independent design, diagnosis, or debugging. Codex/IDE/tool failure is neither learner failure nor verified implementation. Final assessment archive must audit Initial, Assisted, Ownership and transfer evidence, contradictions, corrections, scaffold leakage, missing practice, scenario leakage, tool failure, and historical-project inference. Store transferable capability, not scenario-specific detail.
-
-## Realistic AI-native Coding
-
-Codex and coding agents may normally support diagnosis and implementation. Do not require the learner to generate a complete debug path closed-book like a traditional no-AI programmer. Observe whether the learner can frame the goal, provide relevant context, question agent diagnosis, request evidence, understand key responsibility layers, identify irrelevant changes, review key diffs, run and verify real behavior, and retain ownership after requirement changes.
-
+P0 permanently follows `ASSESSMENT_SPEC.md`: preserve Initial / Assisted / Ownership evidence, sufficiency versus confidence, corrections, contradictions, transfer, tool failure and verified/unverified boundaries. Historical assessment evidence may explain the Matrix but cannot override a newer Matrix.
