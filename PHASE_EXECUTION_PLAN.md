@@ -6,9 +6,9 @@ Purpose: Single source of truth for the current Phase's concrete execution plan.
 
 Previous Phase: P2 — Workflow + Tool + AI-native Interaction — `PASSED`. Historical practice is retained in `LEARNING_LOG.md`; transferable capability conclusions and evidence boundaries are retained in `ABILITY_MATRIX.md`.
 
-Current Position: P3 core instruction is complete; practical Exit-Gate evidence is pending. P3 is not formally `PASSED` and P4 formal learning has not started.
+Current Position: P3 core instruction is complete; practical Exit-Gate evidence is pending. P3 is not formally `PASSED`. P4 core conceptual instruction is covered ahead of formal phase transition, but P4 formal learning, implementation evidence and Exit Gate have not started.
 
 
 Evidence Boundary: the P2 micro lab was a local deterministic runtime, not a real LLM, Provider API, Provider Agent Runtime, or Provider Tool Calling implementation. P1 Provider evidence remains separately deferred.
 
-Next Action: Continue the ongoing Skill / Capability practical validation. Prepare P4 Phase-start Research & Planning as the next learning activity without re-teaching P3 foundations; do not mark P3 passed or P4 formal learning started.
+Next Action: Continue the ongoing Skill / Capability practical validation. After the P3 gate, begin P4 natural practice / validation without re-teaching the covered conceptual foundations; do not mark P3 or P4 passed early.

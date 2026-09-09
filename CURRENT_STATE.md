@@ -5,9 +5,9 @@ Assessment Spec Version: v1.0.1
 
 Lifecycle Position: P3 Core Instruction Complete / Practical Exit-Gate Evidence Pending / P1 Exit Gate Provider Evidence Deferred
 Current Phase: P3 — Context & Capability Engineering
-Current Learning Position: P3 Core Instruction Complete / Practical Exit-Gate Evidence Pending
+Current Learning Position: P3 Core Instruction Complete / Practical Exit-Gate Evidence Pending; P4 Core Conceptual Coverage Ahead of Formal Transition
 Module: P3 Skill / Capability Practical Validation — In Progress
-Status: P2 PASSED; P3 NOT PASSED / PRACTICAL EXIT-GATE EVIDENCE PENDING; P1 EXIT GATE PROVIDER EVIDENCE DEFERRED
+Status: P2 PASSED; P3 NOT PASSED / PRACTICAL EXIT-GATE EVIDENCE PENDING; P4 CONCEPTUAL COVERAGE AHEAD OF FORMAL TRANSITION; P1 EXIT GATE PROVIDER EVIDENCE DEFERRED
 
 Open Current-Phase Exit Evidence: P3 — Practical Validation Pending
 Open Prior-Phase Exit Evidence: P1 — Provider Evidence Deferred
@@ -22,7 +22,7 @@ Baseline Reference: ASSESSMENT_RUN_001.md — read when evidence-boundary clarif
 
 P2 is complete and its Exit Gate is `PASSED`; detailed historical practice remains in `LEARNING_LOG.md`.
 
-P3 core instruction is complete. The ongoing Skill / Capability practical validation is not completion evidence, so P3 remains not passed. The next learning focus may begin P4 Phase-start Research & Planning without re-teaching the completed P3 foundations; P4 formal learning has not started.
+P3 core instruction is complete. The ongoing Skill / Capability practical validation is not completion evidence, so P3 remains not passed. P4 core conceptual instruction has been covered ahead of formal phase transition; this is not P4 implementation or Exit-Gate evidence, and P4 has not formally started or passed. After the P3 gate is complete, enter P4 natural practice / validation without re-teaching these covered foundations.
 
 ## Open Prior-Phase Exit Evidence
 

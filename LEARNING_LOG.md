@@ -69,3 +69,10 @@
 - The learner can distinguish context selection from repository-held information, tool surface from capability, reusable Skill behavior from one-off prompts, runtime State from Memory and History, Harness feedback from Tool / Skill responsibilities, and Code / LLM Judge / Human evaluation roles.
 - Current Skill / Capability optimization practice remains in progress and is not completion evidence. P3 remains not passed pending practical Exit-Gate validation; no Product Design or image-to-code plugin work is recorded as completed.
 - Next learning focus: P4 Phase-start Research & Planning without re-diagnosing completed P3 concepts; P4 formal learning has not started.
+
+## P4 Conceptual Coverage Checkpoint — 2026-09-09
+
+- Covered the P4 conceptual spine: integration boundary / Source of Truth; external API contracts; authentication / authorization / permission; persistent state and data ownership; Retrieval / RAG / Grounding; MCP and Agent-facing integration; and integration strategy / failure.
+- Auth, database modeling, MCP protocol detail, and other supporting depth were compressed to learner-relevant risk and boundary judgment. GPT-6 Computer Use informed the integration choice but did not change the Curriculum: structured API is the primary path and Computer Use is exceptional.
+- No duplicate Integration Micro Lab was created; P4 practice should arise from real external API, RAG, MCP, persistent-state, permission, cache / sync, or Computer Use needs.
+- P4 conceptual coverage is not implementation evidence or an Exit Gate result. P3 practical Exit-Gate evidence remains pending; P4 remains ahead-of-transition coverage only.

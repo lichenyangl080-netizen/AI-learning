@@ -25,6 +25,16 @@ No scheduled calendar review items yet.
 
 - Skill / Capability optimization practice — in progress; do not record Product Design or image-to-code plugin work as completed evidence until practical validation is complete.
 
+## P4 Natural Verification Candidates
+
+- Real external API integration boundary and contract judgment
+- Authoritative source versus cache / sync conflict
+- RAG retrieval-versus-generation failure attribution and grounding
+- API versus MCP versus Computer Use surface selection
+- Persistent state ownership and copy / sync direction
+
+These are future verification candidates, not completed evidence.
+
 ## P1 Deferred Provider Evidence
 
 - Real Model API provider call — deferred until Provider API access is available; evaluate the required P1 Provider integration evidence as defined by `CURRICULUM.md`

@@ -90,7 +90,7 @@ Eval / Verify
 
 ### Section Granularity and Diagnostic Prompts
 
-保持 `Chapter → Lesson → Section` 结构，避免切成大量孤立术语小节；一个 Section 应尽量解决一个完整问题。新内容可先用不预设答案的机制题探测当前任务相关的认知模型。若学习者已能正确解释核心机制，只补必要的专业术语和边界后直接推进；不得重复测试 P0 已有充分证据的能力。学习目标是能判断、能审查 Codex、能验证真实行为，而非为手写代码而手写。
+保持 `Chapter → Lesson → Section` 结构，避免切成大量孤立术语小节；一个 Section 应尽量解决一个完整问题。新内容可先用不预设答案的机制题探测当前任务相关的认知模型。若学习者已能正确解释核心机制，只补必要的专业术语和边界后直接推进；不得重复测试 P0 已有充分证据的能力。学习目标是能判断、能审查 Codex、能验证真实行为，而非为手写代码而手写。诊断节奏优先是：Section 开始时仅在需要时提出 1–3 个有信息量的问题 → 根据回答跳过或补缺口 → 连续讲清一个完整机制 → 必要时提出一个关键判断题 → 实践 / 验证；禁止为了课堂感连续碎片化问答。
 
 ## Deduplication and Section Skip Gate
 
@@ -309,11 +309,11 @@ AI、搜索、官方文档、Codex、代码生成与调试工具均属于默认�
 - 能进行测试、验证或 Eval；
 - 能在相似但不完全相同的任务中迁移使用。
 
-项目交付状态与用户能力状态必须分开记录。
+对 supporting engineering topics，重点不是让学习者在实现细节上超过 Codex，而是能发现风险、知道该追问什么、判断方案是否值得处理，并验收关键产品行为。项目交付状态与用户能力状态必须分开记录。
 
 ## Terminology Teaching
 
-- 新术语首次出现且上下文不明显时，使用“英文术语 + 简短中文含义”。
+- 新英文术语首次出现时，必须立即给出“英文术语 + 简短中文含义”；不得让尚未掌握的术语以裸英文连续出现并承担主要解释。
 - 不在每节课开头堆砌 glossary；术语在即将频繁使用时引入。
 - 已学概念再次出现时，用 1–2 句话回顾；只有明显遗忘或理解错误时才重讲。
 - 提问应服务于判断、设计、解释、调试或验证，避免为制造课堂感而连续提问基础定义。
@@ -408,7 +408,7 @@ ABILITY_MATRIX Current Evidence
 Current Project Need
 ```
 
-已经达到较高能力的内容不能从定义重新讲起。存在 Blocking Gap 时，只补当前任务需要的最小完整基础。
+已经达到较高能力的内容不能从定义重新讲起。存在 Blocking Gap 时，只补当前任务需要的最小完整基础。Auth、Security、Database、API 等 supporting capability 不因重要性自动扩展为专项课程，深度由当前产品风险与真实需求触发。
 
 ### Hard Rules vs Default Practices
 
@@ -430,7 +430,7 @@ Default Practices 可适应：课时长度、例子数量、使用模型、项�
 
 ### Meaningful Deviation Logging
 
-如果正式教学明显偏离计划顺序、跳过某模块、提前引入 Triggered Topic 或改变某 Phase 内容，必须记录原因。正常课堂适应不等于课程改版；只有结构性变化才允许修改 `CURRICULUM.md`。
+如果正式教学明显偏离计划顺序、跳过某模块、提前引入 Triggered Topic 或改变某 Phase 内容，必须记录原因。正常课堂适应不等于课程改版；只有结构性变化才允许修改 `CURRICULUM.md`。稳定的教学方法调整应在 Phase 或 major checkpoint 时写回本协议，而不是只留在 conversation memory。
 
 ## Phase 0 Evidence Fidelity
 
