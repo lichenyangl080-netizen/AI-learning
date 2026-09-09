@@ -33,4 +33,4 @@ P1 remains not formally `PASSED`; its formal Exit Gate is deferred solely for Pr
 - Real `UI → Server → Provider → Model Output → Validation → UI` end-to-end integration
 - Real Provider Tool Calling remains deferred verification evidence for P1/P2 unless required by the actual integration; it is not a standalone P1 Exit Gate requirement.
 
-Next Action: Continue the ongoing P3 practical validation; prepare P4 Phase-start Research & Planning as the next learning activity without repeating P3 foundations. Do not mark P3 passed or P4 formal learning started.
+Next Action: Continue P3 practical validation. After the P3 gate, enter P4 natural practice / validation without re-teaching the covered conceptual foundations.
