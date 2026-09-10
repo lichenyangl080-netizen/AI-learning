@@ -4,7 +4,7 @@ Only open verification needs belong here. An item does not trigger theory re-tea
 
 ## Current Open Evidence
 
-- P3 Skill / Capability practical validation — in progress; do not record Product Design or image-to-code work as completed until the validation is complete.
+- P3 deeper cross-project Context / Capability / Tool / Skill / Harness / Eval transfer — natural, nonblocking verification opportunity; P3 Exit Gate is already `PASSED`.
 
 ## Deferred External Access
 

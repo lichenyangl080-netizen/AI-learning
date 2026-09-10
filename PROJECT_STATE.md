@@ -2,15 +2,15 @@
 
 ## Current Practice
 
-Status: P3_CAPABILITY_PRACTICE_IN_PROGRESS
+Status: P3_CAPABILITY_PRACTICE_COMPLETED
 
-A Skill / Capability optimization practice is in progress for P3 practical validation. It is not completion evidence or a confirmed long-term product.
+A local Product Design plugin workflow/capability optimization is complete. The same real practice provides separately attributed P3 and P6 Exit Gate evidence; it is not a confirmed long-term product.
 
 ## P6 Training Product / Task
 
-Status: NOT_SELECTED
+Status: COMPLETED — Product Design plugin workflow/capability optimization
 
-Select during P6 Phase-start Research & Planning. Prefer a real AI-native product with meaningful product, visual / interaction, Agent collaboration and Eval opportunities. One project may provide separately attributed P3/P4/P5/P6 evidence when those capabilities are naturally required.
+This practice provided the P6 product-building and Eval-driven iteration evidence, alongside separately attributed P3 capability evidence. It is not a confirmed long-term product.
 
 ## Historical Training Environment
 

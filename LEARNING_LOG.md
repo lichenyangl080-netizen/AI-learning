@@ -76,6 +76,16 @@
 - Auth, database modeling, MCP protocol detail, and other supporting depth were compressed to learner-relevant risk and boundary judgment. GPT-6 Computer Use informed the integration choice but did not change the Curriculum: structured API is the primary path and Computer Use is exceptional.
 - No duplicate Integration Micro Lab was created; P4 practice should arise from real external API, RAG, MCP, persistent-state, permission, cache / sync, or Computer Use needs.
 - P4 conceptual coverage is not implementation evidence or an Exit Gate result. P3 practical Exit-Gate evidence remains pending; P4 remains ahead-of-transition coverage only.
+
+## P3 / P6 Exit Gate Archive — 2026-09-10
+
+- One real Product Design plugin optimization practice supplied separately attributed P3 and P6 evidence.
+- P3 evidence covered reusable and verifiable Capability / Context / Workflow / Skill / Tool boundaries, Best/Candidate state, checkpoint, QA and restore mechanisms. P3 Exit Gate: `PASSED`.
+- P6 evidence completed the loop `problem → context/delegation → implementation → steering/correction → tests/Eval → real practice → final acceptance`. P6 Exit Gate: `PASSED`.
+- A wrong screenshot-source / compatibility direction was identified and withdrawn; the withdrawn approach is not counted as final capability evidence.
+- Seven test groups reran successfully, with real reject/restore and final accepted paths.
+- Boundaries remain: the complete official template flow was not independently rerun successfully; this does not prove the whole plugin or every environment is defect-free.
+- Next: P7 not started.
 ## Curriculum Route Audit — 2026-09-10
 
 - Learner selected `P6 → P7 → P8` as the execution mainline, prioritizing AI-assisted product building, Eval-driven iteration, product / AI UX and independent transfer.
