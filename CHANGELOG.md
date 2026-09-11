@@ -1,5 +1,12 @@
 # Curriculum Changelog
 
+## 2026-09-11 — Structured training pause / project-driven route
+
+- P6 formal learning and practice remain archived as PASSED on the existing scoped Product Design evidence.
+- P7 conceptual / judgment coverage is substantially complete, while real-user studio and Exit-Gate evidence remain deferred; P7 is not marked PASSED.
+- P8 Independent AI-native Product Capstone is deferred until a suitable real project and user context arise.
+- Structured foundational training is paused in favor of project-driven, demand-triggered learning; no Curriculum version or capability level changed.
+
 ## v1.3 — Mainline and demand-triggered support route (2026-09-10)
 
 - Trigger: learner found sequential foundation phases low-yield and explicitly chose real Agent/Codex product building as the next primary route, while retaining strong interest in the P3 capability model.

@@ -25,4 +25,9 @@ Verify only when encountered in a real P6/P7/P8 product:
 - P5: permissions, side effects, security, retry/recovery, observability, deployment and reliability.
 - P3: Context, Capability/Tool, Skill, Memory, Harness and Eval transfer beyond the current practical validation.
 
+## Deferred Mainline Evidence
+
+- P7: real-user / stakeholder validation, User Testing, outcome metrics, Adoption / Rollout and feedback-driven iteration; nonblocking until a suitable real product arises.
+- P8: Independent AI-native Product Capstone with an unfamiliar real problem, users / stakeholders and end-to-end delivery evidence; deferred until a suitable project arises.
+
 Future verification candidates remain nonblocking until required by the actual product or current mainline Exit Gate. Formal lifecycle state is determined by `CURRENT_STATE.md`.

@@ -92,3 +92,12 @@
 - P3 remains an ongoing capability model; its current practical validation is still pending.
 - P4 core concepts are covered; future practice should arise from natural product needs. P5 becomes demand-triggered support rather than a standalone full course.
 - Existing P0–P4 history and capability conclusions are not rewritten or upgraded. P1 Provider evidence remains deferred.
+
+
+## P7 / P8 Route Closure — 2026-09-11
+
+- P7 conceptual / judgment coverage was substantially completed with Skip-Gate teaching; discovery, AI opportunity, positioning, adoption / metrics, rollout, trust / provenance, and visual / interaction foundations were not re-taught where existing understanding was sufficient.
+- P7 is not PASSED: real-user / stakeholder, User Testing, outcome metrics, Adoption / Rollout and feedback-driven iteration evidence remain deferred.
+- P8 is confirmed as an Independent AI-native Product Capstone and is deferred until a suitable unfamiliar real problem and user context arise.
+- P1 Provider evidence, P4/P5 natural-demand support verification and deeper P3 transfer remain deferred / nonblocking.
+- Structured foundational training is paused; future learning follows real project → capability gap → task-specific learning → implementation / verification.
